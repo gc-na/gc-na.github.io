@@ -64,7 +64,7 @@ Full custom ASIC, 완전 주문형 반도체는 이 Chip 내부 회로(cell과 g
 
 여기까지가 최근에 가장 핫한 내용인 FPGA와 ASIC이고, 아래는 과거부터 지금까지 많이 쓰이는 반도체에 대해서 이야기할거에요.
 
-![M4](https://postfiles.pstatic.net/MjAyMTA4MDlfMjMx/MDAxNjI4NTEwMDI5NTk0.zhptorzrdDDO2PWPbB62AAJZ1iZCg6xGVyz62hrXQ9wg.hqY6SRUymwP8B8VlkkrnQQ1oqYZ8X6MtST7Ej9Kob_Ig.PNG.gc_na/fedfdfc408aef0d4edfb793bebb75d56.png?type=w966)
+![M4](https://img.meeco.kr/files/attach/images/132/555/184/030/d34123f5217f9fe931171c39a443638f.jpg)
 
 ASIC처럼 Chip 내부에 회로는 완성되어있지만, 다양한 상황 및 기능에 쓰이는 반도체는 '범용 반도체'라고 불려요.
 
