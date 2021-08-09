@@ -2,12 +2,10 @@
 layout: post
 title: Sample blog post
 subtitle: Each post also has a subtitle
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
-
+(https://media.vlpt.us/images/shg4821/post/834d0eba-9619-40c3-810f-40536474b831/2020-07-15%2011;27;02.PNG)
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 **Here is some bold text**
