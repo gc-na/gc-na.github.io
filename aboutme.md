@@ -4,7 +4,7 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Gyeongchae Na. I have the following qualities:
+My name is Gyeongchae Na. I have the following qualities:
 
 - I'm not afraid to be wrong, and I don't end up being wrong.
 - I'm extremely loyal to my career
