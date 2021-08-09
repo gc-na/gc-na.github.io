@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FPGA, ASIC 차이, SoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체)
-subtitle: FPGA, ASIC, SoC, ASSP DIFFERENCE 差异
+subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
 tags: [FPGA, ASIC, SoC, ASSP]
 comments: true
 ---
