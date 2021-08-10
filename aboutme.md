@@ -8,7 +8,7 @@ My name is Gyeongchae Na. I have the following qualities:
 
 - I'm not afraid to be wrong, and I don't end up being wrong.
 - I'm extremely loyal to my career
-- ESTJ
+- I/ESTJ Ambivert
 - BS EE
 
 What else do you need?
