@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ASIC STA, PI 핵심 개념 정리. 사실은 면접 질문 정리.
-subtitle: How to make an errorless C Language
-tags: [ASIC, Verilog, HDL, 半导体]
+subtitle: STA INTERVIEW QUESTION ASIC
+tags: [ASIC, STA, PI, 半导体]
 comments: true
 ---
 
