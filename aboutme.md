@@ -10,6 +10,7 @@ My name is Gyeongchae Na. I have the following qualities:
 - I'm extremely loyal to my career
 - I/ESTJ Ambivert
 - BS EE
+- Language : Korean (Native) / English (Fluent) / Chinese (I can speak pinyin, but I'm not good at Chinese characters. I'm still studying.) / Japanese (Basic conversation level)
 
 What else do you need?
 
@@ -21,4 +22,4 @@ What else do you need?
 - I worked at Marina Bay Hotel🏩 and Hyundai Department Store🏬  for about 3 years.
 - I served as a flight attendant in the Air Force for two years. ✈👨‍✈️
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+To be honest, I'm having some trouble remembering right now, so why don't you just watch [my daily blog](https://blog.naver.com/gc_na) and it will answer **all** your questions.
