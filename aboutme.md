@@ -10,7 +10,10 @@ My name is Gyeongchae Na. I have the following qualities:
 - I'm extremely loyal to my career
 - I/ESTJ Ambivert
 - BS EE
-- Language : Korean (Native) / English (Fluent) / Chinese (I can speak pinyin, but I'm not good at Chinese characters. I'm still studying.) / Japanese (Basic conversation level)
+- Trying to be trilingual.
+- Korean (Native) / English (Fluent) / Chinese (Beginner)
+- C/C++/MFC/Python/R/TCL
+- Verilog HDL/DC/ICC/ICC2/PT/VCS
 
 What else do you need?
 
