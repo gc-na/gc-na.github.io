@@ -1,14 +1,15 @@
 ---
 layout: post
-title: 베릴로그란? Verilog code에서 반도체가 만들어지는 과정, 용어 핵심 정리
-subtitle: How to make a semiconductor from Verilog RTL code.
-tags: [ASIC, Synopsys, extension, 디지털논리회로]
+title: AMBA protocol란? 암바 프로토콜 핵심 정리 AHB, ACE, APB, AXI, CHI
+subtitle: What is AMBA protocol?
+tags: [ASIC, SoC, AMBA, ARM, AHB, APB, AXI, CHI, ACE]
 comments: true
 ---
 
 프로세서, 주변장치, 메모리를 설계했다면 그 다음 차례는 회로간의 연결입니다. 이 연결을 규약(Protocol)한게 AMBA입니다.
 AMBA는 ARM社의 Advanced Microcontroller Bus Architecture Protocol입니다.(굳이 직역하면 ARM사에서 규정하고 약속한 회로 연결 방법론)
 Bus는 데이터나 메모리의 움직임을 결정하고, 클럭이 들어오면 동작합니다. Master는 읽기/쓰기를 Slave단에 허락하고, Slave는 이 명령에 맞게 실행됩니다.
+여러개의 MASTER와 SLAVE가 얽히고 섥혀있어, SoC의 BUS에서 병목현상이 많이 발생해서, 이 부분은 각 모듈들에 라우터를 달아 연결한 형태인 'NoC'로 최적화를 합니다.(이 부분은 Network topology를 다뤄야해서, 나중에 NoC는 따로 다루겠습니다.)
 AMBA는 SoC에서 고성능 16/32bit MCU, 신호처리 프로세서, 주변장치의 설계 표준입니다. (문서가 오픈 되어 있음. 로열티 없음.)
 AMBA Bus Protocol은 저전력, 다중 마스터 지원, 높은 modularity(굳이 번역하자면, 교체나 업그레이드가 쉽다고 생각하면 됩니다.)의 장점을 갖고 있습니다.
 
@@ -42,8 +43,9 @@ AHB는 4개의 전송형태를 갖습니다. HTRANS [1:0]
 01 - BUSY : 전송 중간에 다음 Cycle로 넘어갈 수 없을 때 시간 연장이 필요하여 IDLE 상태로 놓는 것.
 10 - NONSEQ : 단일, 혹은 Burst 전송의 시작
 11 - SEQ : Burst 전송시 전 값과 연달아 전송
+
 - ASB (Advanced System Bus)
-- APB(APB2로도 불림.) (Advanced Peripheral Bus)
+- APB (Advanced Peripheral Bus)
 
 AHB는 4개의 반응형태를 갖습니다. HRESP [1:0]
 00 - OKEY : 정상
@@ -62,4 +64,38 @@ SoC가 하나의 프로토콜로 구성되는건 아니고, 저속으로 해도 
 AMBA3
 - AHB-Lite : 단일 Master. 그래서 Arbitor나 Grant가 없습니다. 단순함.
 - AXI (Advanced eXtensible Interface) : 채널(Slave단의 WRITE DATA CHANNEL, WRITE ADDRESS CHANNEL, WRITE RESPOSE CHANNEL / Master단의 READ DATA CHANNEL, READ ADDRESS CHANNEL) 도입으로 독립하여 작동하여 다수의 저속, 고속 장치가 함께 있더라도, AHB보다 더 빠르게 정보를 전달할 수 있다.
-AXI처럼 채널이 나누어진 Protocol은 Handshake process가 필요해요.
+AXI처럼 채널이 나누어진 Protocol은 DATA, CONTROL INFORMATION을 전송하기 위해 Handshake라는 과정이 필요해요.
+신호를 입력하는 쪽이 Source가 부르고, 받는 쪽을 Destination이라고 불러요. Master만 신호를 보낸다고 오해할 수 있는데, Slave 또한 신호를 보낼 수 있습니다.
+Source가 준비되면, Valid 신호가 1이 됩니다. Destination이 준비되면 Ready가 1이 됩니다.
+(아이폰 4S, 아이패드2, Galaxy S3의 AP에 쓰였어요. Cortex A-9 아키텍쳐의 프로토콜입니다.)
+- APB (Advanced Peripheral Bus)
+- ATB (Advanced Trace Bus)
+
+
+AMBA4, 5부터는 제가 자세히 다루고싶은 내용이라 나중에 AMBA4, 5는 따로 설명해드리고, 이 글에선 간단히 정리하겠습니다.
+우선 ARM 홈페이지(https://developer.arm.com/architectures/system-architectures/amba)에서 나온 핵심 프로토콜은 아래와 같습니다.
+![APB](/assets/img/arm_amba.png)
+무료라는게 눈에 띄네요. 그리고 기업에서도 보통 개발자에게 위 5개 프로토콜에 대한 이해만 요구합니다.
+
+AMBA4
+- ACE (AXI Coherency Extensions) widely used on the latest ARM Cortex-A processors including Cortex-A7 and Cortex-A15
+(갤럭시 S4, S5의 저가형 모델에 A7 아키텍쳐에. 갤럭시 노트3, 크롬북 등에 A15아키텍쳐에 ACE protocol이 쓰였습니다.) 
+- ACE-Lite (AXI Coherency Extensions Lite)
+- AXI (Advanced Extensible Interface 4)
+- AXI-Lite (Advanced Extensible Interface 4 Lite)
+- AXI-Stream (Advanced Extensible Interface 4 Stream)
+- ATB (Advanced Trace Bus)
+- APB (Advanced Peripheral Bus)
+
+AMBA5
+- ACE (AXI Coherency Extensions 5)
+- AXI (Advanced Extensible Interface 5)
+- AXI-Lite (Advanced Extensible Interface Lite)
+- AHB (Advanced High-performance Bus (AHB5, AHB-Lite)
+- CHI (Coherent Hub Interface (CHI)
+(갤럭시 S21의 A55나 갤럭시 노트10에 들어간 A76 아키텍쳐에 CHI 프로토콜이 쓰였습니다.)
+- DTI (Distributed Translation Interface (DTI)
+- GFB (Generic Flash Bus (GFB)
+
+
+ 이 글은 ARM Userguide, ARM Developer website를 참고해 작성했습니다.
