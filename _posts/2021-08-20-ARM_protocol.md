@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AMBA protocol란? 암바 프로토콜 핵심 정리 AHB, ACE, APB, AXI, CHI
+title: AMBA protocol란? 암바 프로토콜 핵심 정리 AHB, ACE, APB, AXI, CHI 什么是 AMBA 协议？ Amba 协议密钥汇总 AHB、ACE、APB、AXI、CHI
 subtitle: What is AMBA protocol?
 tags: [ASIC, SoC, AMBA, ARM, AHB, APB, AXI, CHI, ACE]
 comments: true
