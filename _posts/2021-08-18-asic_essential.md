@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 베릴로그란? Verilog code에서 반도체가 만들어지는 과정, 용어 핵심 정리
-subtitle: How to make a semiconductor from Verilog RTL code.
+title: 베릴로그란? Verilog code에서 반도체가 만들어지는 과정, 용어 핵심 정리 什么是 Verilog？ 用 Verilog 代码制作半导体的过程，关键术语
+subtitle: What is Verilog? How to make a semiconductor from Verilog RTL code.
 tags: [ASIC, Synopsys, extension, 디지털논리회로]
 comments: true
 ---
