@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 엣지 컴퓨팅이란? 클라우드 컴퓨팅이란? 엣지컴퓨팅 클라우드컴퓨팅 그리드컴퓨팅 차이 핵심 개념
+title: 엣지 컴퓨팅이란? 클라우드 컴퓨팅이란? 엣지컴퓨팅 클라우드컴퓨팅 그리드컴퓨팅 차이 핵심 개념 什么是边缘计算？ 什么是云计算？ 边缘计算 云计算 网格计算 差异 关键概念
 subtitle: What is Edge comuting?
 tags: [edge computing, cloud computing, grid computing]
 comments: true
