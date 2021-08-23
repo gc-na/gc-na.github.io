@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래밍 잘 하는법. C언어 꿀팁 (오류 코드 줄이는 짜잘한 팁들) How to make an errorless C Language
+title: 프로그래밍 잘하는 법. C언어 꿀팁 (오류 코드 줄이는 자잘한 팁들) How to make an errorless C Language 如何擅长编程。 C语言小技巧（减少错误代码的小技巧）
 subtitle: How to make an errorless C Language
 tags: [ASIC, Verilog, HDL, 半导体]
 comments: true
