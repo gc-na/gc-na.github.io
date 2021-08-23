@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Verilog RTL coding으로 Stopwatch 설계하기! 베릴로그 스탑워치 코드
+title: Verilog RTL coding으로 Stopwatch 설계하는법 베릴로그 스톱워치 스탑워치 코드 如何使用 Verilog RTL 编码设计秒表 Verilog 秒表代码
 subtitle: Operator is only supported when the second operand is a power of 2
 tags: [ASIC, Verilog, HDL, 半导体]
 comments: true
