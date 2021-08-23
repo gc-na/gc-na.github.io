@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RISC CISC 차이, 폰노이만 하버드구조 장점 단점 장단점 비교
+title: RISC CISC 차이, 폰노이만 하버드구조 장점 단점 장단점 비교 RISC CISC差异，冯诺依曼哈佛结构优点缺点优缺点对比
 subtitle: What's the difference between CISC and RISC?
 tags: [RISC, CISC, Computer arcitecture, 计算机结构]
 comments: true
