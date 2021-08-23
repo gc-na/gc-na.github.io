@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stopwatch Verilog RTL code에 DC(Designe Compiler)로 Constraint file 만들고 적용하기!
+title: Stopwatch Verilog RTL code에 DC(Designe Compiler)로 Constraint file 만들고 적용하기! 使用 DC（Design Compiler）创建约束文件并将其应用于秒表 Verilog RTL 代码！
 subtitle: How to make Verilog Constraint file
 tags: [ASIC, Verilog, Constraint, 半导体]
 comments: true
