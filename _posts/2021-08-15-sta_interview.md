@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASIC STA, PI 핵심 개념 정리. 사실은 면접 질문 정리.
+title: ASIC STA, PI 핵심 개념 정리. 사실은 면접 질문 정리. ASIC STA、PI 关键概念总结。 组织面试问题。
 subtitle: STA INTERVIEW QUESTION ASIC
 tags: [ASIC, STA, PI, 半导体]
 comments: true
