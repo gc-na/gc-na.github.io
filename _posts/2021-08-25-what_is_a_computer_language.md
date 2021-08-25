@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 컴파일러, 인터프리터 차이. C언어, 파이썬 차이. C/C++, Python
-subtitle: #
-tags: []
+title: 컴파일러, 인터프리터 차이. C언어, 파이썬 차이. C/C++, Python Difference 和C语言的区别。
+subtitle: The difference between Python and C language.
+tags: [C, Python, Language, Compiler, Interpreter, Assembly Machine language]
 comments: true
 ---
 
 C는 컴파일 언어, Python은 인터프리터 언어입니다.
-프로그래머들은 보통 프로그램을 만들 때. C/C++, Python 등으로 프로그램을 만듭니다.
+프로그래머들은 보통 프로그램을 만들 때. C/C++, Python 등 Computer language로 프로그램을 만듭니다.
 
 1. C language로 프로그램을 만들면, source.c 파일이 생성됩니다.
 이 source.c 파일은
@@ -19,14 +19,14 @@ int main(void)
   printf("%c", a);
   return 0;
 }
-이런 식으로 되어있을텐데, 컴퓨터는 이게 뭔지 이해하지 못합니다. 인간은 쉽게(?) 이해할 수 있는 High level language입니다.
+이런 식으로 되어있을텐데, 컴퓨터는 이게 뭔지 이해하지 못합니다. 이런게 인간은 쉽게(?) 이해할 수 있는 High level language입니다.
 
 2. Compiler
 High level language(C/C++ 등..)에서 Low level language인 Assembly Language로 Compile 해주는 역할입니다.
 __Assembly 언어는 Hardware가 어떤 ISA를 사용하느냐에 따라 달라집니다.__
 제가 사용하는 RISC-V의 경우 ADD 연산은,
 Add  x2, x3, x4
-이런식으로 나타나고, source.s(유닉스 환경), source.asm(윈도우 환경)파일이 생성됩니다. 환경이 달라지면 실행이 안됩니다.
+이런식으로 나타나고, source.s(유닉스 환경), source.asm(윈도우 환경)파일이 생성됩니다. __컴파일 언어의 특징, 환경이 달라지면 실행이 안됩니다.__
 이런 식으로 써줘도, 아직 컴퓨터는 이해하지 못해요. 수많은 연산자를 사용해기 때문에 인간도 바로 이해하기는 힘든 Low level language입니다.
 
 3. Assembler (Assembler의 과정을 Compiler 과정에 포함해서 말하기도 합니다.)
@@ -51,4 +51,4 @@ unsigned char a같은 command line의 실행과정은 포인터를 알면 과정
 (5) a의 위치에 8bit의 크기를 할당해줘.
 
 
-Python 같은 인터프리터는 2,3,4,5의 과정을 프로그램을 실행시키면서 하기 때문에 느리지만, 호환성 걱정이 없습니다.
+Python 같은 인터프리터는 2,3,4,5의 과정을 __프로그램을 실행시키면서 하기 때문에 느리지만, 호환성 걱정이 없습니다.__
