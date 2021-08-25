@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: 컴파일러, 인터프리터 차이. C언어, 파이썬 차이. C/C++, Python
 subtitle: #
 tags: []
 comments: true
@@ -23,15 +23,15 @@ int main(void)
 
 2. Compiler
 High level language(C/C++ 등..)에서 Low level language인 Assembly Language로 Compile 해주는 역할입니다.
-이 Assembly 언어는 어떤 ISA를 사용하느냐에 따라 달라집니다.
+__Assembly 언어는 Hardware가 어떤 ISA를 사용하느냐에 따라 달라집니다.__
 제가 사용하는 RISC-V의 경우 ADD 연산은,
 Add  x2, x3, x4
-이런식으로 나타나고, source.s(유닉스 환경), source.asm(윈도우 환경)파일이 생성됩니다.
+이런식으로 나타나고, source.s(유닉스 환경), source.asm(윈도우 환경)파일이 생성됩니다. 환경이 달라지면 실행이 안됩니다.
 이런 식으로 써줘도, 아직 컴퓨터는 이해하지 못해요. 수많은 연산자를 사용해기 때문에 인간도 바로 이해하기는 힘든 Low level language입니다.
 
-3. Assembler
+3. Assembler (Assembler의 과정을 Compiler 과정에 포함해서 말하기도 합니다.)
 Low level language에서 Machine language로 바꿔주는 과정입니다.
-00100011000.......  이런식으로 2진수 값이 되어야, '어디에 언제 전압을 걸어주고 빼줘'가 됩니다.
+0010 0011 0100.......  이런식으로 2진수 값이 되어야, '어디에 언제 전압을 걸어주고 빼줘(그러면 더하기 기능이 돼.)'가 됩니다.
 source.o(유닉스 환경), source.obj(윈도우 환경) 파일이 생성이 됩니다. (object라서 목적파일이라고 불려요.)
 그냥 우리가 만들었던 source.c파일에 대한 source.o파일만으로는 프로그램은 우리가 만든 기능을 하지 못해요.
 우리가 만든 printf()함수는 C language의 Library에 만들어진 함수를 우리가 쓴거에요.
@@ -49,3 +49,6 @@ unsigned char a같은 command line의 실행과정은 포인터를 알면 과정
 (3) 라이브러리에서 unsigned char 함수를 찾아서 실행해.
 (4) 하드웨어야 a의 주소값을 지정해줘.
 (5) a의 위치에 8bit의 크기를 할당해줘.
+
+
+Python 같은 인터프리터는 2,3,4,5의 과정을 프로그램을 실행시키면서 하기 때문에 느리지만, 호환성 걱정이 없습니다.
