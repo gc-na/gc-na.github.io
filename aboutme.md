@@ -11,8 +11,8 @@ My name is Gyeongchae Na. I have the following qualities:
 - I/ESTJ Ambivert
 - BS EE
 - Trying to be trilingual.
-- Korean (Native) / English (Fluent) / Chinese (Beginner)
-- C/C++/MFC/Python/R/TCL
+- Korean (Native) / English (Fluent) I'm not good at writing essay tbh. / Chinese (Beginner)
+- C/C++/MFC/Python/R/Kotlin
 - Verilog HDL/DC/ICC/ICC2/PT/VCS
 
 What else do you need?
