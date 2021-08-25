@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FPGA, ASIC 차이, SoC, NoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체) FPGA、ASIC区别、SoC、NoC、ASSP等概念核心总结（定制半导体/通用半导体/专用半导体）
-subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
-tags: [FPGA, ASIC, SoC, ASSP]
+title: 
+subtitle: #
+tags: []
 comments: true
 ---
 
@@ -43,4 +43,9 @@ object들의 관계를 연결해주는 과정입니다.
 
 5. 이후에 실행할 때는 Loader에 올라가고, 메모리에 들어가고 코드를 읽어 실행하게 됩니다.
 
-이참에 포인터의 개념까지 다시 되짚는다면, 
+unsigned char a같은 command line의 실행과정은 포인터를 알면 과정을 쉽게 알 수 있습니다.
+(1) source의 명령어를 읽었는데, unsigned char가 있네? 이게 뭐지
+(2) 아, 이건 C language의 라이브러리 함수네. 라이브러리 함수로 가자.
+(3) 라이브러리에서 unsigned char 함수를 찾아서 실행해.
+(4) 하드웨어야 a의 주소값을 지정해줘.
+(5) a의 위치에 8bit의 크기를 할당해줘.
