@@ -1,0 +1,25 @@
+---
+layout: post
+title: SiFive, 세미파이브 회사 하는 일, RISC-V 什么是 SEMIFIVE、SIFIVE 公司？
+subtitle: What is SEMIFIVE, SIFIVE company?
+tags: [SEMIFIVE, SIFIVE, RISC-V]
+comments: true
+---
+
+RISC-V는 __오픈소스__ ISA (Instruction Set Architecture)입니다. core를 만들기 위한 명령어 집합입니다.
+비슷한 회사로는 ARM이 있습니다. 애플이 M1 Core를 설계할 때 ARM의 아키텍쳐를 사용했죠.
+
+RISC-V는 2010년에 버클리대학에서 [Krste교수님](https://en.wikipedia.org/wiki/Krste_Asanovi%C4%87 "교수:Krste Asanovic"), 박사과정:이윤섭, Andrew Waterman 박사 연구 개발을 시작했습니다.
+이 세명이 2015년에 미국에서 SiFive로 창업을 하고, 한달 후 재단을 만들었습니다.
+![foundation](/assets/img/foundation.PNG)
+SiFive는 RISC-V ISA 연구개발을 통해 Chip License를 만드는 회사이고, MCU의 Chip이나 보드 또한 개발하고있습니다.
+2018년 10월에 SiFive Korea로 한국에 들어섰고, 현재는 SEMIFIVE의 이름으로 운영되고 있습니다. 주업무는 RISC-V의 License 업무와 커스텀 반도체 설계인데, RISC-V뿐만 아니라 ARM core 설계 또한 하고있습니다.
+
+ARM의 경우는 Cortex-A, Cortex-R, Cortex-M으로 세 분야를 나누고 있는데,
+RISC-V 역시, U cores, S cores, E cores로 나누고 있습니다. E core는 기존의 임베디드(가전장치 등)의 MCU에 들어가는 코어이고, S core는 IoT, AI, deep learning, edge computing에 들어가는 코어, U core는 Data center, Linux 등 고사양 작업용 칩입니다.
+
+
+ARM이 기술도 좋고, 역사도 긴데 RISC-V가 경쟁자가 될 수 있는 이유는 __오픈소스__ 이기 때문입니다.
+과거엔 미세공정으로 제품 성능을 올렸지만, 공정 한계에 오면서 설계의 중요성이 대두되었고, 한 칩을 범용적으로 쓸 때의 효율보다, 전용 칩(e.g. 추론용 칩, 수집용 칩)을 만드는 것이 좋다는 결론이 나왔습니다.
+근데 ARM Core로 설계를 하면 숙련된 수십명의 엔지니어가 있는 상태에서 라이센스 비용으로 수십억이 필요한데, 
+RISC-V는 오픈소스라서 무료이고, 오픈소스라서 배울 수도 있고, 숙련된 엔지니어를 찾기 쉬워질걸는 전망 때문에 경쟁자가 되고있습니다. 또, 오픈소스라서 성장세가 높구요.
