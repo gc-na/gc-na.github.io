@@ -1,0 +1,23 @@
+---
+layout: post
+title: FPGA, ASIC 차이, SoC, NoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체) FPGA、ASIC区别、SoC、NoC、ASSP等概念核心总结（定制半导体/通用半导体/专用半导体）
+subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
+tags: [FPGA, ASIC, SoC, ASSP]
+comments: true
+---
+
+DFT의 단계에 함께하는 ATPG란, 디지털 회로의 테스트 패턴 생성 알고리즘 입니다. (Automatic Test Pattern Generation)
+그냥 무턱대고 집어넣으면, 50개의 경우의 수만 따져도, 1000조개가 넘는 경우의 수가 나옵니다. 실제 경우의 수는 이보다 많구요. 그래서 다양한 알고리즘이 쓰입니다.
+1. Manual Test Pattern Generation
+설계 회로의 동작 검증을 위하여 논리 시뮬레이션에서 사용하는 기능.
+Fault 검출을 위해 테스트 벡터를 변형시켜 사용합니다. 높은 FC(Fault Coverage)을 얻기는 어려우나, Stuck At Fault 외에도 시간 지연 고장 등을 검출할 수 있습니다.
+2) Random Test Pattern Generation
+Fault model이나 회로 구조에 무관하게 SW/HW 방법으로 임의의 테스트 벡터를 생성해서 대입합니다.
+단순함. 그러나 높은 FC가 나오기 힘들다.
+3) Algorithmic Test Pattern Generation
+회로도와 사용된 소자의 동작 특성을 이용하여 SW Algorithm을 사용하여 테스트 벡터를 생성하는 것으로, 비교적 FC를 얻을 수 있습니다.
+
+
+
+TetraMax tool의 구성과 사용방법을 알아본다. 그리고 TetraMax tool을 이용하여
+ATPG와 fault simulation을 수행한다.
