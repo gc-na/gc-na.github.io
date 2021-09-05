@@ -70,7 +70,6 @@ puts $tcl_version
 터미널 등에서 tclsh 파일명.tcl을 입력하면
 8.5 이런식으로 현재 버전이 출력됩니다.
 
-![Tcl/TK](/assets/img/800px-Tcl.svg.png)
 <img src="/assets/img/800px-Tcl.svg.png" width="200" height="200"/>
 
 자, 이제 명령어입니다. 마찬가지로 텍스트편집기에서 작성하고, 터미널 등에서 실행 가능합니다.
