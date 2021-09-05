@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tcl Download, How to use Tcl, 티클 사용법, 티클 다운로드, Tcl tk 使用方法, 下载
+title: Tcl Download, How to use Tcl, 티클 사용법 명령어, 티클 다운로드, Tcl tk 使用方法, 下载
 subtitle: How to use Tcl, How to download Tcl Tk
 tags: [Tcl, TK, Script]
 comments: true
@@ -182,3 +182,4 @@ puts \[add 10 10\]
 Tcl도 파일 열기 닫기, 패키징, 윈도우, 유닉스, 맥의 GUI환경으로 만들 수 있어요. Tcl로 이걸 할 일이 없더라구요. 그래서 제외를 했습니다.
 글 기획 할 때는 간단하게 하고싶었으나, 어떤 코드까지만 설명을 해드려야할지 애매하더라구요. 그래서 좀 군더더기가 포함되었습니다.
 오타가 있을 수도 있는데, 지적해주시면 수정하겠습니다.
+Tcl이 워낙 쉽게 잘 만들어진 언어라서 한국어 최신 자료는 없습니다. 그래도 한국어 자료를 찾아보실 분들은 '원나라 tcl/tk 기본'을 찾아보세요.
