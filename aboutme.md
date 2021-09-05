@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
 ---
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=header&text=GyeongchaeNa&fontSize=50&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=130&section=header&text=GyeongchaeNa&fontSize=50&fontColor=ffffff)
 My name is Gyeongchae Na. I have the following qualities:😎
 - I'm not afraid to be wrong, and I don't end up being wrong.
 - Korean (Native) / English (Fluent) I'm not good at writing essay tbh.🤫 / Chinese (Beginner)
