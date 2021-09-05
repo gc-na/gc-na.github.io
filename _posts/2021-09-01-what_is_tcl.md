@@ -70,9 +70,7 @@ puts $tcl_version
 터미널 등에서 tclsh 파일명.tcl을 입력하면
 8.5 이런식으로 현재 버전이 출력됩니다.
 
-
-
-
+![Tcl/TK](/assets/img/800px-Tcl.svg.png
 
 자, 이제 명령어입니다. 마찬가지로 텍스트편집기에서 작성하고, 터미널 등에서 실행 가능합니다.
 1. puts - 터미널에 글을 표현합니다. puts "Hello, World" 이렇게 쓰면, Hello, World가 출력됩니다.
