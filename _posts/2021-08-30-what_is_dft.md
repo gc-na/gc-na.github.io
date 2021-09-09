@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SoC 검증에서 DFT란. BIST BIT JTAG SCAN, DFT engineer
+title: SoC 검증에서 DFT란. BIST BIT JTAG SCAN, DFT engineer 0.1v
 subtitle: What is a DFT in VLSI?
 tags: [SoC, ASIC, DFT, Verification]
 comments: true
