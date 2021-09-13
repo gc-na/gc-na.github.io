@@ -52,3 +52,6 @@ TetraMAX ATPG
 6. 테스트 벡터값을 삽입하고, Fault Coverage 도출 및 확인. 기준값 미달이면 다시 위로 돌아가서 옵션을 바꿔본다.
 7. Pattern 요약
 8. Test Pattern과 Fault list를 저장.
+
+참고, The Standard Test Interface Language (STIL FILE) STIL Procedure File (SPF FILE)은 DRC(Design Rule Check)와 Pattern 만드는데에 필요함.
+내부 딜레이, RC값 정보가 들어있음.
