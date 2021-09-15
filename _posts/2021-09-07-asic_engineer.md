@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: SoC ASIC Engineer의 요구사항 + 나는 뭐했을까 (fet.TMI)
 subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
 tags: [FPGA, ASIC, SoC, ASSP]
 comments: true
