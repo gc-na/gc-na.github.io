@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SoC 검증에서 DFT란. BIST BIT JTAG SCAN, DFT engineer 0.1v
+title: SoC 검증에서 DFT란. BIST BIT JTAG SCAN BIRA
 subtitle: What is a DFT in VLSI?
 tags: [SoC, ASIC, DFT, Verification]
 comments: true
@@ -26,12 +26,12 @@ Stuck Fault란, 어떤 선의 값이 어떤 값으로 고정되는 것입니다.
 
 Combination Logic은 비교적 테스트하기 간단한데, Sequential Logic은 이전 state에 영향을 받기 때문에 더 복잡합니다.
 그래서 Sequential Logic test를 단순화하는 SCAN이라는 방법이 쓰입니다.(특히 LSSD SCAN이 많이 쓰입니다.
-SCAN은 1️⃣추가 로직과 인아웃풋을 달고, 2️⃣플립플롭들에 선을 __체인처럼 한줄로 연결하고,(SCAN Chain이라고 불림.)__ 3️⃣테스트벡터를 입력하는 방식입니다.
+__SCAN__ 은 1️⃣추가 로직과 인아웃풋을 달고, 2️⃣플립플롭들에 선을 __체인처럼 한줄로 연결하고,(SCAN Chain이라고 불림.)__ 3️⃣테스트벡터를 입력하는 방식입니다.
 그러면 이전 state 값이 명확해집니다. 그러면 테스트벡터를 넣어서 Stuck at fault 같은 문제를 찾아냅니다.
 ![SCAN](https://i2.wp.com/semiengineering.com/wp-content/uploads/2015/02/scan-test.jpg)
 (이 과정이 어렵지만 DFT EDA tool에서 알아서 하기 때문에 고민할게 없는데, Sequential Logic들의 각기 다른 클럭에서 동기된다면 복잡해집니다.)
 
-보통 DFTF라고 한다면, 3가지로 나뉩니다. Boundry SCAN, ATPG, MBIST.
+보통 DFT라고 한다면, 3가지로 나뉩니다. Boundry SCAN, ATPG, MBIST.
 
 Boundry SCAN(IEEE-1149.1 1990 JTAG, Joint Test Action Group)은 앞서 말한 SCAN과 원리는 같습니다.
 In/Output 모두 연결해서 Tab controller를 사용해 칩, 칩간의 연결을 테스트할 수 있는 국제적으로 표준화된 방법입니다.
@@ -41,7 +41,11 @@ https://www.youtube.com/watch?v=TlWlLeC5BUs&ab_channel=EEVblog
 
 Logic BIST (Built In Self Test) / BIT (Built In Test)
 ![BIST](https://mblogthumb-phinf.pstatic.net/MjAxODA4MTFfNjgg/MDAxNTMzOTk3ODQ2Nzg1._C8kl7XMUiydvKXHibv7FOFEtWUX1Oxfrsw1_h5JgK0g.KLNN2hkzRhWMaYPtdnDAuVdHJMEgaG_3_Qy5IJeEI8Yg.PNG.zzbksk/BIST.png?type=w2)
-자체 테스트 회로를 추가해 로직이 제대로 동작하고 있는지 확인하는 방법입니다.
-SCAN으로 하면, Chain을 다 통과해야해서 좀 느려지는데, BIST는 SCAN에비해 시간 지연률이 낮습니다. 하지만 추가회로때문에 면적이 커집니다. (SCAN과 함께 쓰이기도 합니다.)
+자체 테스트 회로를 추가해서 테스트 패턴을 스스로 생성하고 로직이 제대로 동작하고 있는지 확인하는 방법입니다.
+SCAN으로 하면, Chain을 다 통과해야해서 좀 느려지는데, BIST는 SCAN에비해 딜레이가 적지만, 추가회로때문에 면적이 커집니다. (SCAN과 함께 쓰이기도 합니다.)
+
+BIST로 Fault Check를 하고,
+__BIRA(Built-In Redundancy Analysis)__ 는고장난 정보를 이용하여 여분의 메모리에 어떻게 재배치 할 것인지 판단합니다.
+__(BISR : Built-In Self-Repair)__ 는 사용자가 Fault 주소로 데이터를 읽거나 쓰기를 할 때, 재배치 정보를 이용하여 여분의 정상 메모리로 대체합니다. (고장난 기능을 여분으로 고쳐줍니다.)
 
 DFT 엔지니어라 하면, SCAN/BIST/JTAG 등으로 결함을 찾을 수 있게하고, Power Simulation으로 IR Drop (패턴 보고)을 하는 직무로 볼 수 있습니다.
