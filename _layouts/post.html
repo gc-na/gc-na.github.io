@@ -40,6 +40,10 @@ layout: base
       {% endif %}
 
       <article role="main" class="blog-post">
+        <div class="toc">
+      <a href="#">&lt;맨 위로&gt;</a>
+      {% include toc.html html=content %}
+    </div>
         {{ content }}
       </article>
 
