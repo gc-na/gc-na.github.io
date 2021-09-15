@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FPGA, ASIC 차이, SoC, NoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체) FPGA、ASIC区别、SoC、NoC、ASSP等概念核心总结（定制半导体/通用半导体/专用半导体）
+title: 
 subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
 tags: [FPGA, ASIC, SoC, ASSP]
 comments: true
@@ -12,7 +12,7 @@ ASIC SoC Verification Engineer가 되기 위해서 무슨 능력이 필요할까
 
 프로젝트 경험 : Sub-module ~ System 개발 경험 (Stop watch / 8bit MCU / ARM의 Cortex-M3를 Altera툴에 코딩하여 Digilet社의 LED, FND, Buzzer, Switch가 있는 FPGA Board인 BASYS2로 구현 경험. // 웹, 서버, 안드로이드 앱, Atmega128, Arduino 프로젝트 경험 있고, 납땜, 오실로스코프 사용 당연히 가능.
 
-사용 환경 : Github, Linux, C/C++/System C, Verilog HDL, tcl, vim, Design Compiler, VCS, DFT Compiler, TetraMAX, Verdi, PrimeTime Spyglass, Formality, ICC1, ICC2 // Kotlin, R, Python도 공부했음. 개발환경은 vim이랑 pycharm
+사용 환경 : Github, Linux, C/C++/System C, Verilog HDL, tcl, vim, Design Compiler(DCT, DCG), VCS, DFT Compiler, TetraMAX, Verdi, PrimeTime Spyglass, Formality, ICC1, ICC2 // Kotlin, R, Python도 공부했음. 개발환경은 vim이랑 pycharm
 
 흥미, 쉬는날 하는 것 : 쉬는날에도 관심있는 부분을 깃헙 블로그에 정리중. 유튜브에 공부한 걸 올리고 있음. 본인 스마트폰의 유튜브 켜면 알고리즘 때문에 첫화면에 VLSI 강의하는 영어하는 인도 교수님 늘 나옴.  
 
@@ -28,14 +28,12 @@ DFT Implementation
   - BIST/BIRA Insertion & Simulation : Tessent MBIST / JTAG / IJTAG
   - SDC Creation & Clean
   - Spyglass LINT/SDC/DFT Check
-  - Logic Synthesis : DC/DCT/DCG
   - Equivalence Check : Formality/Conformal
   - LDRC : Logic Design Rule Check (Spyglass_LDRC)
   - Timing Closure : cross-talk/noise/mttv/setup/hold fix (Prime_Time, Physical-aware ECO)
   - Low Power Design : UPF Creation & Low power Rule Check(VC_LP)
   - Multi-voltage, Multi power domain, Power-gating, Clock-gating.
   - Power Analysis : Vectored / Vectorless (PTPX)
-  - Implementation 자동화Platform 개발
 
 
 Bus protocol (AMBA, NoC 등) 이해
