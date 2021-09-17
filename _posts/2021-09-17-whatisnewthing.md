@@ -1,8 +1,8 @@
 ---
 layout: post
-title: RISC CISC 차이, 폰노이만 하버드구조 장점 단점 장단점 비교 RISC CISC差异，冯诺依曼哈佛结构优点缺点优缺点对比
-subtitle: What's the difference between CISC and RISC?
-tags: [RISC, CISC, Computer arcitecture, 计算机结构]
+title: 무어의 법칙 그 다음. 저전력 설계의 시대.
+subtitle: Low Power System
+tags: [저전력, Low Power]
 comments: true
 ---
 
@@ -43,10 +43,9 @@ M1에서 채택한 ARM의 RISC ISA는 기존의 x86보다 저전력으로 구동
 M1은 Big-Little 구조입니다. CPU가 8코어지만, 반만 씁니다. 평소엔 저전력인 리틀코어 4개를 쓰고, 고성능 작업이 필요할 때에만 빅코어를 씁니다.
 DVFS, Dynamic Voltage Frequency Scale. 작업에 필요한만큼의 전압과 주파수를 인가합니다.
 tsmc 5nm 공정 등이 있습니다.
+이외에도 다양한 이유가 있는데, x86에서 ARM core로 변화했다는 것이 가장 큰 요인입니다.
 
 
-
-현재 기업들이 연구중인 기술들에 대해 소개하겠습니다.
 RISC-V 관련 기업은 아직 스타트업인 만큼, [애플](https://www.tomshardware.com/news/apple-looking-for-risc-v-programmers "애플"), 안드로이드, 윈도우, 리눅스 등에서 포팅 작업 등을 하고있습니다.
 ARM은 CRFID라고 해서, 버스카드나 신용카드의 RFID처럼 배터리 없이 무선으로 정보 교환을 할 수 있는 프로젝트 Triffid를 연구중입니다.
 
