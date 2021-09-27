@@ -15,6 +15,7 @@ Violation이 일어나지 않기 위한 조건으로, 클럭의 엣지를 기준
 2. Setup time violation과 hold time violation 중에 뭐가 더 나쁜가요?
 hold time violation입니다. hold time violation은 data path와 관련이 있습니다. Setup time violation은 클럭 주기 조절로 violation을 막을 수 있습니다.
 Tc2q + Tcomb + Tsetup ≤ Tclk + Tskew
+
 Tc2q + Tcomb ≥ Thold + Tskew
 
 3. Setup time Violation과 Hold time Violation을 어떻게 피할 수 있나요?
