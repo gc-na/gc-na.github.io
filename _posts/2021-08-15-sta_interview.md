@@ -13,7 +13,7 @@ ASIC에서 Front end! 그중에서 PI팀! 특히 STA를 위해 필요한 핵심 
 Violation이 일어나지 않기 위한 조건으로, 클럭의 엣지를 기준으로, 셋업은 엣지 이전에, 홀드는 엣지 이후에 데이터 값의 최소 유지시간입니다.
 
 2. Setup time violation과 hold time violation 중에 뭐가 더 나쁜가요?
-hold time violation입니다. hold time violation은 data path와 관련이 있습니다. Setup time violation은 클럭 주기 조절로 violation을 막을 수 있습니다.
+hold time violation입니다. hold time violation은 data path와 관련이 있습니다. Setup time violation은 클럭 주기 조절로 violation을 막을 수 있습니다.  
 Tc2q + Tcomb + Tsetup ≤ Tclk + Tskew  
 Tc2q + Tcomb ≥ Thold + Tskew
 
