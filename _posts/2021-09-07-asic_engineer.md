@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SoC ASIC Verification Engineer가 되기 위해 나는 뭐 했을까 + 난 뭐가 하고싶다. (fet.TMI)
+title: SoC ASIC Verification Engineer가 되기 위해(feet.TMI)
 subtitle: #Veirication Enginner
 tags: [FPGA, ASIC, SoC, ASSP]
 comments: true
