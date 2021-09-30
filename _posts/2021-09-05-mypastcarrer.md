@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4학년 2학기가 되어서, 진로에 대한 방황을 하는 이들에게.
+title: 4학년 2학기가 되어서, 진로에 대
 subtitle: Diary Essay
 tags: [Diary, Essay]
 comments: true
