@@ -13,7 +13,7 @@ ASIC SoC Verification Engineer가 되기 위해서 무슨 능력이 필요할까
 경험 : Sub-module ~ System 개발 경험. (Stop watch / 8bit MCU / ARM의 Cortex-M3를 Altera툴에 코딩하여 Digilet社의 LED, FND, Buzzer, Switch가 있는 FPGA Board인 BASYS2로 구현 경험. 써본 툴들에 대한 Synopsys Lab Guide, User Guide 다 공부했음.
 // 웹, 서버, 안드로이드 앱, Atmega128, Arduino 소소한 프로젝트 경험 있고, STM도 써봄. 납땜, 오실로스코프 사용 당연히 가능.
 
-사용 환경, 언어 : C/C++/System C, Verilog HDL, tcl, vim, Design Compiler(DCT, DCG), VCS, TetraMAX, PrimeTime, ICC1, ICC2, Github, Linux
+사용 환경, 언어 : C/C++, Verilog HDL, tcl, vim, Design Compiler(DCT, DCG), VCS, TetraMAX, PrimeTime, ICC1, ICC2, Github, Linux
 // Kotlin, R, Python도 공부했음. 개발환경은 vim이랑 pycharm 좋아함. vscode나 아나콘다, 주피터노트북도 써보긴함.
 
 흥미, 쉬는날 하는 것 : 쉬는날에도 관심있는 부분을 깃헙 블로그에 정리중. 유튜브에 공부한 걸 올리고 있음. 본인 스마트폰의 유튜브 켜면 알고리즘 때문에 첫화면에 VLSI 강의하는 영어하는 인도 교수님 늘 나옴. (웰껌뚜 브이엘에스아이 째널~) 
