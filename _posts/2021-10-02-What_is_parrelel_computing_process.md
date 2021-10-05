@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FPGA, ASIC 차이, SoC, NoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체) FPGA、ASIC区别、SoC、NoC、ASSP等概念核心总结（定制半导体/通用半导体/专用半导体）
-subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
-tags: [FPGA, ASIC, SoC, ASSP]
+title: 병렬처리 방법론
+subtitle: #Parallel #Hardware #Computer
+tags: [Parallel, 병렬 컴퓨팅, 병럴처리, Computer architecture]
 comments: true
 ---
 
