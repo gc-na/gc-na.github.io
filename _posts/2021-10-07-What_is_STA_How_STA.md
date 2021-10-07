@@ -13,28 +13,41 @@ STA란(Static Timing Analysis, 정적 시간 분석) : 같은 오실레이터에
 PrimeTime이란, STA를 할 수 있는 EDA tool.  
 
 STA를 하기 위해 필요한 것.  
-SPEF(Standard Parasitic Exchange Format) : Net, Cell의 RC값 정보. (P&R이후에 나온다.)  
-SDF(Standard Delay Format) : Parastics에서 나온 RC값을 딜레이로 계산한 정보  
+Back Anotation File
+(1) SPEF(Standard Parasitic Exchange Format) : Net, Cell의 RC값 정보. (P&R이후에 나온다.)  
+(2) SDF(Standard Delay Format) : Parastics에서 나온 RC값을 딜레이로 계산한 정보  
 e.g. IOPATH delay, INTERCONNECT delay, SETUP timing check, HOLD timing check. 날짜, 벤더, PVT조건 등..  
 Gate-level netlist : RTL 합성 이후 나온 파일.  
 e.g. .v, .vhdl
-Libraries : RTL에 사용된 셀에 대한 정보  
+Libraries(Technology Cells) : RTL에 사용된 셀에 대한 정보  
 e.g. cb13fs120_tsmc_max  
-Design Constraints : 설계 제약 조건  
+Design Constraints (Tcl로 작성된) : 설계 제약 조건  
 e.g. create_clock, set_input_delay, set_output_delay  
++ 부수적으로 Script file. Script 없이도 할 수 있지만, 실수를 줄이기 위해.
   
 PrimeTime FLow
 1. 디자인 설정  
-Design, libraries 불러와서 링크하고, search, link path 알려주고, wire, port load 등 써주고, Parasitic 값 불러옴.  
+Design, libraries 불러와서 링크하고, Top level 디자인 설정하고, search, link path 알려주고, wire, port load 등 써주고, Parasitic 값 불러옴.  
+$read_verilog
+$link_design ORCA  
+$set search_path  
+$lappend link_path  
 2. 제약 사항 입력  
 클록주기, 파형, 레이턴시, 인아웃풋 딜레이 등 넣어줌.
 create_clock, set_input_delay, set_output_delay, set_clock_latency 등 제약사항 써줌.
 3. 분석, 보고, 저장  
-$check_timing
+$check_timing #제약 조건이 잘 들어갔는지 확인.
 $report_timing #클록 정보, 각 셀들의 딜레이, DAT, DRT, 셋업홀드 여부, slack(worst case) 등을 볼 수 있음.
 $report_analysis_coverage #타이밍 분석에 대한 검사율과 violation 비율
+$set timing_update_status_level high #어디서 timing update가 일어났는지 확인
 https://vlsi-backend-adventure.com/images/sta/timingreport.jpg
 4. 디버그  
+
+STA에 들어가기 전에 마음가짐(?) : 스크립트의 중요성  
+(1) 칩을 실수 없이 만들어야하고, (2) 많은 경우에서 충분히 의미있는 검증이 수행되어야 한다.  
+Tape-out 직전에는 할 일은 많은데, 정신적으로는 지쳐있다.  
+우리는 우리를 믿어서는 않고, (1) 검증된 스크립트를 통해 자동으로 디자인 (2) 다양한 조건에서 놓치지 말고 자동으로 시뮬레이션을 수행해야 한다.  
+디자인을 불러오든, 제약 조건을 불러오든, 검증을 불러오든, 항상 스크립트로 구현하는 습관을 들여야한다.  
 
 타이밍 체크에 필요한 개념  
 Launch edge : FF1의 Active edge
@@ -51,7 +64,8 @@ End point : Clk핀을 제외한 모든 입력핀, output port
 Primetime이 시간을 측정하는 한 path : FF1의 clk 핀에서 FF2의 입력핀. 이렇게 한 쌍의 핀이 하나의 path로 인정.
 Slew, Transition : 데이터가 바뀌는데 걸리는 delay. 엄밀하게 말하면, 데이터가 10%에서 90%까지(혹은 20%에서 80%)까지 변화하는데 걸리는 시간  
 Timing arc : input pin이 다른 핀의 데이터 변화에 영향을 끼치는데 걸리는 지연 시간  
-Unate cell : 입력핀 하나만 바뀌어도 출력이 변하는 셀
+Unate cell : 입력핀 하나만 바뀌어도 출력이 변하는 셀  
+Black Box : cell 내에 timing arc가 빠져서 정확한 STA를 할 수 없는 셀. $set link_create_black_boxes false로 생성 막을 수 있음.
 
 Prime time이 STA 하는법  
 라이브러리에는 cell의 slew가 명시되어있습니다. PBA(Path Based Analysis)와 GBA(Graph Based Analysis)가 있는데, 
@@ -63,9 +77,13 @@ $printvar #숫자 나옴.
 $help #command 찾아줌  
 $man #command 설명  
   
-
-
-
+클럭의 종류  
+Synchronous clock : 한 클럭에 의해 launch되고 다른 클럭에 의해 capture   
+Asynchronous clock : 상호 타이밍 관계가 없다면, PT는 타이밍 체크를 안함  
+Generated clock : 소스클럭에서 곱해지거나 나눠져서 나온 클럭이고 레이턴시가 없다. Input, Output delay들의 참조로 쓰인다.  
+Virtual clock  : 존재하지만, 실제 디자인의 핀, 포트에 연결되지 않은 클럭.  
+디자인 내 클럭의 수 보는법 : $sizeof_collection \[all_clocks\]
+정의된 모든 클럭의 포트 보는법 : $rpt_clock_ports $get_clock_ports
 
 
 
