@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 병렬처리 방법론. 멀티 코어, 멀티 프로세스, 멀티 쓰레드 기법 개념 정리
-subtitle: #Parallel #Hardware #Computer
-tags: [Parallel, 병렬 컴퓨팅, 병럴처리, Computer architecture]
+title: STA란, PrimeTime 개념 정리
+subtitle: What is a STA and PrimeTime
+tags: [STA, PrimeTime, DRT, DAT, SDF, SPEF]
 comments: true
 ---
 
