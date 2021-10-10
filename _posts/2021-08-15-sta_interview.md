@@ -23,7 +23,8 @@ Hold time Viloation은, Tc2q, Tcomb를 높이면 됩니다. (버퍼 추가)
 
 4. Slack이 뭔가요?
 DRT와 DAT의 차입니다. Setup time Slack은 DRT-DAT이고, Hold time Slack은 DAT-DRT입니다.
-차가 음수가 되면 Violation이 일어납니다. DRT=Capture edge - Setuptime이고, DAT는 로직들의 딜레이로 알 수 있습니다.
+차가 음수가 되면 Violation이 일어납니다.  
+DRT=Capture edge - Launch edge - Setuptime이고, DAT는 로직들의 딜레이로 알 수 있습니다.
 
 5. 어떻게 Negative Slack을 개선하나요?
 사이에 플립플롭(파이프라인)을 넣어서 DAT를 줄여주거나, 회로의 딜레이 최적화로 개선할 수 있습니다.
