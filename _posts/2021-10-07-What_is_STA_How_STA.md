@@ -15,7 +15,7 @@ PrimeTime이란, STA를 할 수 있는 EDA tool.
 STA를 하기 위해 필요한 것.  
 Back Anotation File
 (1) SPEF(Standard Parasitic Exchange Format) : Net, Cell의 RC값 정보. (P&R이후에 나온다.)  
-(2) SDF(Standard Delay Format) : Parastics에서 나온 RC값을 딜레이로 계산한 정보  
+(2) SDF(Standard Delay Format) : Parastics에서 나온 RC값을 딜레이로 계산한 정보. StarRC를 통해 딜레이를 추출한다. 아마 엘모어딜레이 쓸듯(뇌피셜)  
 e.g. IOPATH delay, INTERCONNECT delay, SETUP timing check, HOLD timing check. 날짜, 벤더, PVT조건 등..  
 Gate-level netlist : RTL 합성 이후 나온 파일.  
 e.g. .v, .vhdl  
