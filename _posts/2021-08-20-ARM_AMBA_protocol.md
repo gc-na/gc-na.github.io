@@ -72,7 +72,6 @@ Source가 준비되면, Valid 신호가 1이 됩니다. Destination이 준비되
 - ATB (Advanced Trace Bus)
 
 
-AMBA4, 5부터는 제가 자세히 다루고싶은 내용이라 나중에 AMBA4, 5는 따로 설명해드리고, 이 글에선 간단히 정리하겠습니다.
 우선 ARM 홈페이지(https://developer.arm.com/architectures/system-architectures/amba)에서 나온 핵심 프로토콜은 아래와 같습니다.
 ![APB](/assets/img/arm_amba.PNG)
 무료라는게 눈에 띄네요. 그리고 기업에서도 보통 개발자에게 위 5개 프로토콜에 대한 이해만 요구합니다.
@@ -98,4 +97,5 @@ AMBA5
 - GFB (Generic Flash Bus (GFB)
 
 
- 이 글은 ARM Userguide, ARM Developer website를 참고해 작성했습니다.
+사실 저도 직접적으로 AMBA를 설계검증해본적 없어서, 간단하게만 다뤘습니다. 배우면서 내용 첨삭하겠습니다.  
+이 글은 ARM Userguide, ARM Developer website를 참고해 작성했습니다.
