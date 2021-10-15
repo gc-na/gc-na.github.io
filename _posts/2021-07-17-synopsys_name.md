@@ -6,17 +6,19 @@ tags: [ASIC, Synopsys, extension]
 comments: true
 ---
 
-오늘은 Synopsys (Design conmpiler/DC/Primetime/PT/IC compiler/ICC/ICC2 등..)에 쓰이는 파일 확장자에 대해 알아보겠습니다.
+Synopsys EDA tool을 사용하면서 긴가민가 했던 것들을 정리했습니다.
 
 ![Synopsys](/assets/img/synopsys-vector-logo-small.png)
 
-_*_.v - verilog RTL source file
+cb13fs120_tsmc_max - tsmc 130nm 공정 라이브러리. Student LAB에선 다 이거 썼다. 130nm는 아무공정 회사나 하는거 아닌가 했는데, tsmc가 작은 breakdown voltage로 잘 잡는다네요. (이 라이브러리 궁금해서 구글링 계속 했는데, 안 나와서 중국어 번체로 구글링해서 찾음;;;;)
 
-_*_.vg, .g.v - Verilog 게이트 수준 넷리스트 파일. 때때로 사람들은 이 파일 확장자를 사용하여 원본 파일과 게이트 수준 넷리스트를 구분합니다.
+_*_.v - verilog RTL source file. DC나 ICC에서는 Gate level netlist로 쓴다.
 
 _*_.ddc - synopsys internal database format. Design compiler에서 Write를 하면, ddc파일 형태로 포맷이 나옵니다. ddc는 RTL code, Top design 적용이 된 로직(Gtech, 부울식으로 풀린) 포맷입니다. ddc를 안하고 매번 베릴로그 파일을 읽고, top design 적용하고, 연결하고, Gtech으로 적용하면 많은 시간이 소요되어 이 포맷을 사용합니다. 
 
 _*_.svf - 자동 셋업 파일. 보통은 이 파일로 default setup을 지정합니다. Formality 할 때 필요한 파일입니다.
+
+_*_.sdf - 
 
 _*_.tcl - synopsys 툴을 실행할 때 내가 원하는 설정으로 실행하도록 정의한 파일 (본래 tcl은 Tool command language라고, 하나의 언어입니다.)
 
