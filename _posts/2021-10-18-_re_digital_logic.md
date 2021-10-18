@@ -49,7 +49,7 @@ Q2. F(x,y,z) = (x+y)(y'+z)(x'+z')를 NOR로 나타내라.
 <script src="https://gist.github.com/gc-na/fe390b7f3bf8dbd00f34062dbe5a8c40.js"></script>  
 
 Synopsys VCS(ver : 03.2020)로 확인한 파형  
-![moore_wave](/assets/img/moorewave.png)  
+![moore_wave](/assets/img/moore_wave.png)  
 
 
 5. 동기식, 비동기식 개념.
