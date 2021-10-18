@@ -42,11 +42,15 @@ Q2. F(x,y,z) = (x+y)(y'+z)(x'+z')를 NOR로 나타내라.
 무어회로 : 입력값이 현재 상태에 반영되고, 출력은 상태값에서 나옴.  
 밀리회로 : 입력값이 현재 상태에 반영되고, 출력은 현재상태와 입력값 두개가 연산되어 나옴.  
 밀리로 하면 설계가 복잡해져서 무어를 많이 쓰는 것 같다. 간단한 무어 회로를 설계해보겠습니다.  
-IDLE상태가 기본 상태가 되고, 클럭이 들어올 때, a에 1이 들어오면 a가 나가고, a가 1이 아니며 b가 1이 들어오면 b가 나갑니다.  
-그래서, 두 경우로 나뉩니다.  
-IDLE -> A0 -> A1 -> A2 -> A3 -> IDLE  
-IDLE -> B0 -> B1 -> B2 -> B3 -> IDLE  
+
+플로우는 다음과 같습니다. 
+![sitck_diagram](/assets/img/reset_idle.png)
+   
 <script src="https://gist.github.com/gc-na/fe390b7f3bf8dbd00f34062dbe5a8c40.js"></script>  
+
+Synopsys VCS(ver : 03.2020)로 확인한 파형  
+![moore_wave](/assets/img/moorewave.png)  
+
 
 5. 동기식, 비동기식 개념.
 asynchronous : 비동기식. 리셋이 작동하려면, reset이 active edge(posedge로 설정했다면 0->1, negedge로 설정했다면 1->0)  
