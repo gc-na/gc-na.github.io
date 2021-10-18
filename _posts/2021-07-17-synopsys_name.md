@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Synopsys 파일 확장자 종류, 개념 베릴로그, Verilog, Design compiler, Primtime, IC compiler Synopsys 文件扩展名类型、概念
+title: Synopsys 파일 확장자. cb13fs120_tsmc_max란?
 subtitle: Synopsys file extension
 tags: [ASIC, Synopsys, extension]
 comments: true
