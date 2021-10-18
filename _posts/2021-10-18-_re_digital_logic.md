@@ -21,7 +21,7 @@ comments: true
 ![boolean](/assets/img/equatns.gif)  
 위 식만 있으면 다 할 수 있다! 근데, 몇가지는 사실 잘 눈에 안 보임.  
 
-![q1](/assets/img/스크린샷 2021-10-18 오후 2.38.34.png)  
+![q1](/assets/img/gfdagasdfasf.png)  
 여기서 끝이라고 생각했는데,,,, 답이 이게 아니다. 풀이가 없어서 이거 갖고 10분 고민했다.  
 위 정리의 분배법칙(?)을 이용한다.  
 
@@ -44,4 +44,5 @@ Q2. F(x,y,z) = (x+y)(y'+z)(x'+z')를 NOR로 나타내라.
 5. 동기식, 비동기식 개념.
 asynchronous : 비동기식. 리셋이 작동하려면, reset이 active edge(posedge로 설정했다면 0->1, negedge로 설정했다면 1->0)  
 synchronous : 동기식. 예를들어 리셋이 작동하려면, clk의 active edge가 발생한 상황에 reset이 1이어야됨.  
+
 <script src="https://gist.github.com/gc-na/ddcce39918fbebf446b082eba477bb06.js"></script>
