@@ -1,0 +1,47 @@
+---
+layout: post
+title: 디지털 공학
+subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
+tags: [FPGA, ASIC, SoC, ASSP]
+comments: true
+---
+
+졸업하기 전에 배운 전공들 상기 시키는 중.  
+자료구조나 알고리즘 같은 건 눈으로만 다시 봤고, VLSI는 이전에 몇번 포스팅 했고, 디지털 공학을 커밋하기로 결정.  
+언어들은 사실 command가 잘 기억 안나는데, 프로그래밍은 할 줄 알고, 가끔 스택오버플로우 탐독하니 괜찮을듯.
+
+디지털 공학 문제 풀려고 하니까... 뭘 써야하는지는 기억이 나는데, 어떻게 하는지 기억이 안남.
+
+카르노맵, 부울식 정리, 밀리 무어 차이, 씽크와 어씽크 개념, 낸드, 노아로 게이트 일원화
+
+1. 카르노맵
+진리표를 만들고, 거기서 붙어있는 것 2^N개씩 묶어서 식으로 나타낸다.
+
+2. 부울식 정리
+![boolean](/assets/img/equatns.gif)  
+위 식만 있으면 다 할 수 있다! 근데, 몇가지는 사실 잘 눈에 안 보임.  
+
+![q1](/assets/img/스크린샷 2021-10-18 오후 2.38.34.png)  
+여기서 끝이라고 생각했는데,,,, 답이 이게 아니다. 풀이가 없어서 이거 갖고 10분 고민했다.  
+위 정리의 분배법칙(?)을 이용한다.  
+
+![q2](/assets/img/KakaoTalk_Photo_2021-10-18-14-40-51.jpeg)  
+
+
+3. NAND, NOR 게이트들만 이용하여 변환하기  
+NAND, NOR 변환은 이런 방법으로 변환할 수 있다.  
+![q2](/assets/img/KakaoTalk_Photo_2021-10-18-14-44-51.png)  
+
+Q1. F(x,y,z) = x'y + yz' + xz를 NAND로 나타내라.  
+Q2. F(x,y,z) = (x+y)(y'+z)(x'+z')를 NOR로 나타내라.  
+![q3](/assets/img/KakaoTalk_Photo_2021-10-18-14-46-49.jpeg)  
+
+4. FSM Finite State Machine. 밀리머신 무어머신 차이점, 베릴로그 만들기.
+무어회로 : 입력값이 현재 상태에 반영되고, 출력은 상태값에서 나옴.  
+밀리회로 : 입력값이 현재 상태에 반영되고, 출력은 현재상태와 입력값 두개가 연산되어 나옴.  
+
+
+5. 동기식, 비동기식 개념.
+asynchronous : 비동기식. 리셋이 작동하려면, reset이 active edge(posedge로 설정했다면 0->1, negedge로 설정했다면 1->0)  
+synchronous : 동기식. 예를들어 리셋이 작동하려면, clk의 active edge가 발생한 상황에 reset이 1이어야됨.  
+<script src="https://gist.github.com/gc-na/ddcce39918fbebf446b082eba477bb06.js"></script>
