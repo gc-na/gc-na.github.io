@@ -59,8 +59,8 @@ synchronous : 동기식. 예를들어 리셋이 작동하려면, clk의 active e
 비동기식 D flip flop, 동기식 flip flop, Preset 포함, 테스트벤치까지!
 <script src="https://gist.github.com/gc-na/ddcce39918fbebf446b082eba477bb06.js"></script>  
 <script src="https://gist.github.com/gc-na/9f09cb08134f9e7e44b7ff41a0205d22.js"></script>  
-
-6. 카운터
-2^n진 카운터는 그냥 넣어주면 된다. 알아서 비트 따라 올라가고 오버플로우되면 0으로 간다.
-2^n진 카운터가 아니라면, if문을 써주면 된다.
+  
+6. 카운터  
+2^n진 카운터는 그냥 넣어주면 된다. 알아서 비트 따라 올라가고 오버플로우되면 0으로 간다.  
+2^n진 카운터가 아니라면, if문을 써주면 된다.  
 <script src="https://gist.github.com/gc-na/28dec7ec98f42e6d9fdef047b89ffada.js"></script>
