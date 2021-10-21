@@ -12,7 +12,7 @@ Clock divider 클럭 분주기 (1MHz to 1Khz)
 <script src="https://gist.github.com/gc-na/1be003eb4494658f59aa0d4aa8709f54.js"></script>  
 ![clock_divider](/assets/img/clock_divider.png)  
 
-4bit Up counter. 0 -> 1 -> 2 -> ... -> A -> B -> ... -> F -> 0 -> 1 ->... 순으로 이어진다.  
+4bit Up counter. 0 -> 1 -> 2 -> ... -> A -> B -> ... -> F -> 0(오버플로우) -> 1 ->... 순으로 이어진다. 4bit라서, 0000->0001->0010->..->1111->0000으로 오버플로우 되는 것이다.  
 <script src="https://gist.github.com/gc-na/3db8e1ab206b07487fbb02813fa4ac1d.js"></script>  
 ![4bit_up_counter](/assets/img/clock_divider.png)  
  
