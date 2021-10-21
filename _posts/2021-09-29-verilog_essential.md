@@ -15,9 +15,7 @@ Clock divider 클럭 분주기 (1MHz to 1Khz)
 4bit Up counter. 0 -> 1 -> 2 -> ... -> A -> B -> ... -> F -> 0 -> 1 ->... 순으로 이어진다.  
 <script src="https://gist.github.com/gc-na/3db8e1ab206b07487fbb02813fa4ac1d.js"></script>  
 ![4bit_up_counter](/assets/img/clock_divider.png)  
-
-
-![4bit_up_counter](/assets/img/clock_divider.png)  
+ 
 
 7 Segment Decoder
 <script src="https://gist.github.com/gc-na/24aa7a7a10582df9e1d059e42c03f7a5.js"></script>  
