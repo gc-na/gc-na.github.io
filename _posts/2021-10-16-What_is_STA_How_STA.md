@@ -13,21 +13,24 @@ STA란(Static Timing Analysis, 정적 시간 분석) : 같은 오실레이터에
 PrimeTime이란, STA를 할 수 있는 EDA tool.  
 
 STA를 하기 위해 필요한 것.  
-Back Anotation File
+1. Back Anotation File
 (1) SPEF(Standard Parasitic Exchange Format) : Net, Cell의 RC값 정보. (P&R이후에 나온다.)  
 (2) SDF(Standard Delay Format) : Parastics에서 나온 RC값을 딜레이로 계산한 정보. StarRC를 통해 딜레이를 추출한다. 아마 엘모어딜레이 쓸듯(뇌피셜)  
 e.g. IOPATH delay, INTERCONNECT delay, SETUP timing check, HOLD timing check. 날짜, 벤더, PVT조건 등..  
-Gate-level netlist : RTL 합성 이후 나온 파일.  
-e.g. .v, .vhdl  
-Libraries(Technology Cells) : RTL에 사용된 셀에 대한 정보  
-e.g. cb13fs120_tsmc_max  
-Design Constraints (Tcl로 작성된) : 설계 제약 조건  
-e.g. create_clock, set_input_delay, set_output_delay  
-+ 부수적으로 Script file. Script 없이도 할 수 있지만, 실수를 줄이기 위해.
 ![sdf_spef](/assets/img/spef_sdf.png)
 https://en.wikipedia.org/wiki/Standard_Parasitic_Exchange_Format#*CONN_Section  
 
 참고로, spef파일 내에 conn은 net와 pin의 연결정보, cap은 커패시턴스, res는 저항 값을 의미합니다.
+
+2. Gate-level netlist : RTL 합성 이후 나온 파일.  
+e.g. .v, .vhdl  
+3. Libraries(Technology Cells) : RTL에 사용된 셀에 대한 정보  
+e.g. cb13fs120_tsmc_max  
+![library](/assets/img/library_file.png)
+
+4. Design Constraints (Tcl로 작성된) : 설계 제약 조건  
+e.g. create_clock, set_input_delay, set_output_delay  
++ 부수적으로 Script file. 없이도 할 수 있지만, 꼭 만들어서 하기를 권장한다. 실수를 줄이기 위해.  
   
 PrimeTime FLow
 1. 디자인 설정  
