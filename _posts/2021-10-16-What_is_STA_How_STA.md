@@ -24,6 +24,10 @@ e.g. cb13fs120_tsmc_max
 Design Constraints (Tcl로 작성된) : 설계 제약 조건  
 e.g. create_clock, set_input_delay, set_output_delay  
 + 부수적으로 Script file. Script 없이도 할 수 있지만, 실수를 줄이기 위해.
+![sdf_spef](/assets/img/spef_sdf.png)
+https://en.wikipedia.org/wiki/Standard_Parasitic_Exchange_Format#*CONN_Section  
+
+참고로, spef파일 내에 conn은 net와 pin의 연결정보, cap은 커패시턴스, res는 저항 값을 의미합니다.
   
 PrimeTime FLow
 1. 디자인 설정  
@@ -35,13 +39,17 @@ $lappend link_path
 2. 제약 사항 입력  
 클록주기, 파형, 레이턴시, 인아웃풋 딜레이 등 넣어줌.
 create_clock, set_input_delay, set_output_delay, set_clock_latency 등 제약사항 써줌.
+![constraints](/assets/img/constraints.png)  
+참고로 위 파일은 제가 Synopsys DC Lab할 때 만든 con file입니당
+
 3. 분석, 보고, 저장  
 $check_timing #제약 조건이 잘 들어갔는지 확인.
 $report_timing #클록 정보, 각 셀들의 딜레이, DAT, DRT, 셋업홀드 여부, slack(worst case) 등을 볼 수 있음.
 $report_analysis_coverage #타이밍 분석에 대한 검사율과 violation 비율
 $set timing_update_status_level high #어디서 timing update가 일어났는지 확인
+![report1](/assets/img/report_timing.png)  
+![report2](/assets/img/report_analysis_coverage.png)  
 
-![M1](https://vlsi-backend-adventure.com/images/sta/timingreport.jpg)  
 4. 디버그  
 
 STA에 들어가기 전에 마음가짐(?) : 스크립트의 중요성  
@@ -69,8 +77,6 @@ Unate cell : 입력핀 하나만 바뀌어도 출력이 변하는 셀
 Black Box : cell 내에 timing arc가 빠져서 정확한 STA를 할 수 없는 셀. $set link_create_black_boxes false로 생성 막을 수 있음.
 
 
-![M2](https://vlsi-backend-adventure.com/images/sta/timingreport.jpg)
-
 PT를 하면서, 궁금한게 있으면?  
 $printvar #숫자 나옴.  
 $help #command 찾아줌  
@@ -80,7 +86,7 @@ $man #command 설명
 Synchronous clock : 한 클럭에 의해 launch되고 다른 클럭에 의해 capture   
 Asynchronous clock : 상호 타이밍 관계가 없다면, PT는 타이밍 체크를 안함  
 Generated clock : 소스클럭에서 곱해지거나 나눠져서 나온 클럭이고 레이턴시가 없다. Input, Output delay들의 참조로 쓰인다.  
-Virtual clock  : 존재하지만, 실제 디자인의 핀, 포트에 연결되지 않은 클럭.  
+Virtual clock  : 실제 디자인의 핀, 포트에 연결되지 않았는데, 타이밍 검증을 하기위해 가상적으로 넣어주는 클럭  
 디자인 내 클럭의 수 보는법 : $sizeof_collection \[all_clocks\]
 정의된 모든 클럭의 포트 보는법 : $rpt_clock_ports $get_clock_ports
 
