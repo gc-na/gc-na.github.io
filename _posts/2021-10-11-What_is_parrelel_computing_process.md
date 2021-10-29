@@ -5,16 +5,16 @@ subtitle: #Parallel #Hardware #Computer
 tags: [Parallel, 병렬 컴퓨팅, 병럴처리, Computer architecture]
 comments: true
 ---
-
+![pentium1](/assets/img/intelduo1.jpeg)  
 병렬처리(Parallel Processing) - 일의 다수의 프로세서 분담, 동시 처리 기법
 많은 수의 프로세서들로 하나의 시스템을 구성할 수 있도록 작고 저렴하며 고속인 프로세서 사용
 한 프로그램을 여러 개의 작은 부분들로 분할하는 것이 가능해야 하며, 분할된 부분들을 병렬로 처리한 결과가 전체 프로그램을 순차적으로 처리한 경우와 동일한 결과를 얻을 수 있어야 함
-
+![pentium1](/assets/img/intelduo2.jpeg)  
 멀티 코어 (Multi core) : 다이 하나에 2개 이상의 코어를 집적한 것.
-멀티 쓰레드 (Multi thread) : 멀티 프로세스보다 적은 메모리 공간을 차지하고 Context Switching이 빠른 장점이 있지만, 동기화 문제와 하나의 스레드 장애로 전체 스레드가 종료 될 위험을 갖고 있다.
+멀티 쓰레드 (Multi thread) : 멀티 프로세스보다 적은 메모리 공간을 차지하고 Context Switching이 빠른 장점이 있지만, 동기화 문제와 하나의 스레드 장애로 전체 스레드가 종료 될 위험을 갖고 있다.  
 멀티 프로세스 (Multi process) : 하나의 프로세스가 죽더라도 다른 프로세스에 영향을 주지 않아 안정성이 높지만, 멀티 스레드보다 많은 메모리공간과 CPU 시간을 차지하는 단점이 있다.  
 Context Switching : 하나의 프로세스가 CPU를 사용 중인 상태에서 다른 프로세스가 CPU를 사용하도록 하기 위해, 이전 프로세스의 상태(Context)를 보관하고 새로운 프로세스의 상태를 적재하는 작업  
-https://en.wikipedia.org/wiki/Context_switch  
+![pentium1](/assets/img/intelduo3.jpeg)  
 
 
 필요한 관련 기술들  
@@ -67,7 +67,7 @@ PE(Processing Element) : 모든 프로세싱 요소들이 하나의 제어유닛
 
 복잡한 명령어를 각 PE에 나눠서 빠르게 처리할 수 있다는 장점이 있다. 면적은 좀 커지겠지만..  
 
-
+![pentium1](/assets/img/intelduo4.jpeg)
 다중프로세서시스템 구조 MIMD 조직으로서, 여러 개의 프로세서들이 비동기적으로 프로그램을 실행하는 시스템  
 기억장치 모듈을 사용하는 (소유하는) 방식에 따른 분류  
 공유-기억장치 시스템(shared-memory system)  
@@ -158,12 +158,10 @@ TRACE-7 시스템 : 기능 유니트의 수 = 7, 명령어 길이 = 256 비트
 TRACE-28 시스템 : 기능 유니트의 수 = 28, 명령어 길이 = 1024 비트  
 
 슈퍼파이프라인(super-pipeline) 구조  
-각 단계를 두 개 혹은 그 이상으로 분할  
-슈퍼파이프라이닝의 정도(degree of superpipelining)가 n인 기능 유니트의 클럭 사이클 시간은 기본 사이클의 1/n  
-
-Superpipelined Superscalar 구조  
 슈퍼파이프라인과 슈퍼스칼라가 결합된 구조  
+각 단계를 두 개 혹은 그 이상으로 분할  
+슈퍼파이프라이닝의 정도(degree of superpipelining) : n인 기능 유니트의 클럭 사이클 시간은 기본 사이클의 1/n   
 최근 대부분의 고성능 프로세서들에서 사용  
 
 
-자주 헷갈리는 개념이라, 찾아볼 때마다 쉽게 보려고 특징 위주로 정리했습니다.  
+자주 헷갈리는 개념이라, 찾아볼 때마다 쉽게 보려고 특징 위주로 요약했습니다.  
