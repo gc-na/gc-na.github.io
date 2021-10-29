@@ -11,6 +11,7 @@ STA란(Static Timing Analysis, 정적 시간 분석) : 같은 오실레이터에
 
 ![M1](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Metastability_D-Flipflops.svg/1920px-Metastability_D-Flipflops.svg.png)
 왜 기능 검증을 안하는가? -> 동시에 모든 검증을 하면 너무 느려지므로.  
+Static은 알겠는데, DTA도 있어? -> 있음. ASIC에선 대표적으로 Synopsys의 VCS. 근데 Violation Check은 안하고, 타이밍에 대한 펑션 시뮬레이션임.  
   
 PrimeTime이란, STA를 할 수 있는 EDA tool.  
 
