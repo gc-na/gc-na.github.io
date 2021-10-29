@@ -8,6 +8,8 @@ comments: true
 
 STA란(Static Timing Analysis, 정적 시간 분석) : 같은 오실레이터에서 나와 startpoint와 endpoint의 짝이 맞는 디지털 디자인에 대하여, 기능을 제외하고 시간에 대한 formal 검증, 수학적 검증을 수행하는 것.  
 기능상 문제가 없지만, 타이밍이 안맞으면 뭐가 문젠데? -> metastable state이라고 불리는.. 어떤 값이 출력으로 나올지 모름.  
+
+![M1](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Metastability_D-Flipflops.svg/1920px-Metastability_D-Flipflops.svg.png)
 왜 기능 검증을 안하는가? -> 동시에 모든 검증을 하면 너무 느려지므로.  
   
 PrimeTime이란, STA를 할 수 있는 EDA tool.  
