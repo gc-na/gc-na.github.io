@@ -16,7 +16,7 @@ comments: true
 
 1. 카르노맵
 진리표를 만들고, 거기서 붙어있는 것 2^N개씩 묶어서 식으로 나타낸다.  
-구글에 karnaugh map solver이라고 검색하면 알아서 묶어주고 부울식 만들어주는 툴 들이 많다.
+구글에 karnaugh map solver이라고 검색하면 알아서 묶어주고 부울식 만들어주는 툴 들이 많다.  
 
 2. 부울식 정리
 ![boolean](/assets/img/equatns.gif)  
@@ -24,6 +24,7 @@ comments: true
 구글에 boolean algebra라고 검색하면 알아서 간략화 시켜주는 툴들이 있다. 그치만 한 문제만 풀어보자.  
 
 ![q1](/assets/img/gfdagasdfasf.png)  
+(다시 보니, 마지막 줄의 항들에 bar 표시가 안되었음. B'C'+AB'C+AB가 맞음.)  
 여기서 끝이라고 생각했는데,,,, 답이 이게 아니다. 풀이가 없어서 이거 갖고 10분 고민했다.  
 위 정리의 분배법칙(?)을 이용한다.  
 
