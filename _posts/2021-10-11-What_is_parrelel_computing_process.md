@@ -6,7 +6,7 @@ tags: [Parallel, 병렬 컴퓨팅, 병럴처리, Computer architecture]
 comments: true
 ---
 ![pentium1](/assets/img/intelduo1.jpeg)  
-병렬처리(Parallel Processing) - 일의 다수의 프로세서 분담, 동시 처리 기법
+병렬처리(Parallel Processing) - 일의 다수의 프로세서 분담, 동시 처리 기법  
 많은 수의 프로세서들로 하나의 시스템을 구성할 수 있도록 작고 저렴하며 고속인 프로세서 사용
 한 프로그램을 여러 개의 작은 부분들로 분할하는 것이 가능해야 하며, 분할된 부분들을 병렬로 처리한 결과가 전체 프로그램을 순차적으로 처리한 경우와 동일한 결과를 얻을 수 있어야 함
 ![pentium1](/assets/img/intelduo2.jpeg)  
@@ -67,7 +67,7 @@ PE(Processing Element) : 모든 프로세싱 요소들이 하나의 제어유닛
 
 복잡한 명령어를 각 PE에 나눠서 빠르게 처리할 수 있다는 장점이 있다. 면적은 좀 커지겠지만..  
 
-![pentium1](/assets/img/intelduo4.jpeg)
+![pentium1](/assets/img/intelduo4.jpeg)  
 다중프로세서시스템 구조 MIMD 조직으로서, 여러 개의 프로세서들이 비동기적으로 프로그램을 실행하는 시스템  
 기억장치 모듈을 사용하는 (소유하는) 방식에 따른 분류  
 공유-기억장치 시스템(shared-memory system)  
