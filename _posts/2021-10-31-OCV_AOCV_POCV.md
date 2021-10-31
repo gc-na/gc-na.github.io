@@ -1,8 +1,8 @@
 ---
 layout: post
-title: FPGA, ASIC 차이, SoC, NoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체) FPGA、ASIC区别、SoC、NoC、ASSP等概念核心总结（定制半导体/通用半导体/专用半导体）
-subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
-tags: [FPGA, ASIC, SoC, ASSP]
+title: OCV, AOCV, POCV, PVT란? On Chip Variation
+subtitle: What is an OCV, AOCV, POCV and PVT in vlsi?
+tags: [STA, Primetime, OCV, process]
 comments: true
 ---
 
@@ -58,9 +58,46 @@ PrimeTime 툴에서는 set_timing_derate 커맨드를 사용해서 지정할 수
 
 AOCV에서는 Cell의 Path depth와 distance를 derating factor로 지정합니다.
 
-path depth란, 몇개의
+path depth란, 지나는 Cell의 수입니다.
+
+![path_depth](https://1.bp.blogspot.com/-8Ds-yziI-SA/XxM4eM5XPII/AAAAAAAAbhs/51jQ5KtSOSoMO6lPFU1nCNx0A90n8hXwACLcBGAsYHQ/w640-h218/pathDepth.png)
+
+distance는 Net와 Cell의 경계를 기준으로 한 범위 입니다.
+
+![distance](https://1.bp.blogspot.com/-O-yKzhD8onM/XxM0dCzASGI/AAAAAAAAbhg/rUvvGhYDBQM6-thljy206ynReWfhlEeOgCLcBGAsYHQ/w640-h218/distance.png)
 
 path depth가 증가하면, Non-Systematic Variation이 상쇄되서 derate 값을 낮춰도 됩니다.
 
 distance가 증가하면, Systematic Variation이 증가해서 derate의 값을 높여줘야합니다.
 
+아래 표에서 depth와 distance에 따른 derate 값이 나타나 있습니다. (참고로, 버퍼셀 3개를 넘는 것과 or셀 3개를 넘는 것은 타이밍과 derate가 다릅니다.)
+
+AOCV에서는 Clock analysis mode, Clock and data analysis mode가 있습니다.
+
+AOCV는 depth와 distance를 기반으로 derate 값을 정하는데, 이것도 40nm부터는 정확도가 낮아서 새로운 기법을 사용합니다.
+
+POCV(Parametric On chip Variation)입니다.
+
+![table](/assets/img/aocv2Dtable.png)
+
+아래는 Synopsys의 Prime time에서 제공하는 AOCV design flow입니다.
+
+![flow](/assets/img/ptAOCVFlow.png)
+
+POCV는 Cell의 delay로 계산이 됩니다. 그 delay는 아래 식을 통해서 구합니다.  
+
+Delay of a cell = Nominal delay (µ)  ±  (C * Nominal delay) * N  
+or  
+Delay of a cell = Nominal delay (µ)  ± Variation  
+        
+C = POCV coefficient이고, POCV coefficient file에 있습니다.  
+
+![flow](/assets/img/cvalue.png)
+
+N = Number of standard deviation이고, Library Variation Format (LVF) 파일 안에 있습니다.  
+
+![flow](/assets/img/value2.png)
+
+아래는 Synopsys의 PrimeTime에서 제공하는 POCV design flow입니다.
+
+![flow](/assets/img/pocvPTflow.png)
