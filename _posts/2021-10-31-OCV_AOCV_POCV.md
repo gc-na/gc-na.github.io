@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OCV, AOCV, POCV, PVT, CPP, CRPR란? On Chip Variation
+title: OCV, AOCV, POCV, PVT, CRP, CRPR란? On Chip Variation
 subtitle: What is an OCV, AOCV, POCV and PVT in vlsi?
 tags: [STA, Primetime, OCV, process]
 comments: true
@@ -107,9 +107,9 @@ OCV(OCV, AOCV, POCV)를 수행하면 생기는 의심이 있습니다.
 
 한 path내에 어떤 때에는 매우 작은 delay가 걸릴 때가 있고, 큰 delay가 걸릴 수 있는데(한 path에는 한 경우에 한가지 delay만 가질 수 있음.), 이런 차이가 생겨도 회로가 정상적으로 동작 할 것인가?
 
-이에 대해 CPP(Common Path Pessimism)라고 부릅니다.
+이에 대해 CRP(Common Recovergence Pessimism)라고 부릅니다. 이것을 제거하는 과정은 CRPR(remove)라고 합니다.
 
-CRP란,
+![111](/assets/img/crpr.png)
 
 ![111](/assets/img/111.png)
 
