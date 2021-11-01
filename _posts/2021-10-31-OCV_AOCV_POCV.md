@@ -111,7 +111,7 @@ OCV(OCV, AOCV, POCV)를 수행하면 생기는 의심이 있습니다.
 
 CRP란,
 
-![111](/assets/img/111.)
+![111](/assets/img/111.png)
 
 ![111](/assets/img/222.png)
 
