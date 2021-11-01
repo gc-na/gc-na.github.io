@@ -6,7 +6,7 @@ tags: [STA, Primetime, OCV, process]
 comments: true
 ---
 
-반도체의 속도는 PVT Oerating Condition의 영향을 받습니다.
+반도체의 속도는 PVT Operating Condition의 영향을 받습니다.
 
 Process가 짧고, Voltage 높고, Temperature가 낮을 수록 빠르게 구동될 수 있습니다.
 
