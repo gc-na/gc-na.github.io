@@ -46,9 +46,13 @@ Computer Organization & Design책에 있는 설명 그림이 아주 표현력이
 
 기존의 non-pipeline에서는 빨래 작업1이 끝나야, 다음 빨래 작업 2를 수행 할 수 있었습니다.
 
+저녁 6시에 빨래를 시작했는데, 새벽 2시에 빨래가 끝났네요.
+
 ![von vs har](/assets/img/risc2.png) 
 
 pipeline을 쓰면 아래 그림처럼, 빨래 작업 1의 세탁기 작업이 끝나서 건조기로 들어가면, 빨래작업2의 옷이 세탁기로 들어갈 수 있는 것이에요!
+
+저녁 6시에 빨래를 시작했는데, 저녁 9시 30분에 빨래가 끝났어요!
 
 ![von vs har](/assets/img/risc3.png)  
 
