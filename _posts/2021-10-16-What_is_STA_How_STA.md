@@ -95,13 +95,13 @@ $help #command 찾아줌
 $man #command 설명  
   
 클럭의 종류  
-Synchronous clock : 한 클럭에 의해 launch되고 다른 클럭에 의해 capture   
-Asynchronous clock : 상호 타이밍 관계가 없다면, PT는 타이밍 체크를 안함  
+Create clock : 소스(마스터) 클럭
 Generated clock : 소스클럭에서 곱해지거나 나눠져서 나온 클럭이고 레이턴시가 없다. Input, Output delay들의 참조로 쓰인다.  
 Virtual clock  : 실제 디자인의 핀, 포트에 연결되지 않았는데, 타이밍 검증을 하기위해 가상적으로 넣어주는 클럭  
 디자인 내 클럭의 수 보는법 : $sizeof_collection \[all_clocks\]
 정의된 모든 클럭의 포트 보는법 : $rpt_clock_ports $get_clock_ports
-
+Synchronous clock : 한 클럭에 의해 launch되고 다른 클럭에 의해 capture   
+Asynchronous clock : 상호 타이밍 관계가 없다면, PT는 타이밍 체크를 안함  
 
 
 
