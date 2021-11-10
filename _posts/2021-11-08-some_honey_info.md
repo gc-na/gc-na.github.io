@@ -1,12 +1,15 @@
 ---
 layout: post
-title: FPGA, ASIC 차이, SoC, NoC, ASSP 등 개념 핵심 정리 (주문형 반도체 / 범용반도체 / 특수용도 반도체) FPGA、ASIC区别、SoC、NoC、ASSP等概念核心总结（定制半导体/通用半导体/专用半导体）
-subtitle: #FPGA #ASIC #SoC #ASSP #DIFFERENCE #差异
-tags: [FPGA, ASIC, SoC, ASSP]
+title: 내가 아는 컴퓨터 구조 개념 공부, 산업 동향 알기 좋은 사이트?
+subtitle: Sharinggg
+tags: [꿀팁]
 comments: true
 ---
 
 
+테크노바이트 : https://technobyte.org/
+
+위 사이트는, DFT, 컴퓨터구조, 베릴로그 등 배울 수 있고 평가를 받을 수 있는 사이트입니다. 굉장히 퀄리티 좋은 무료 사이트에요!
 
 이하 블로그들은 산업 동향 관련 블로그입니다. 사실 가장 빠른 것은 인터넷 뉴스이고, 더 정확한 것은 증권사 컨센서스입니다.
 
