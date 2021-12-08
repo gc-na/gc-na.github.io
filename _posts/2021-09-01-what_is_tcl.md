@@ -177,6 +177,21 @@ proc add {a b} {
 }
 puts \[add 10 10\]
 
+10. 존재 판별문. info
+
+% set aa 2
+
+2 
+
+% info exists aa 
+
+1 
+
+% info exists bb 
+
+0
+
+
 
 마무리
 Tcl도 파일 열기 닫기, 패키징, 윈도우, 유닉스, 맥의 GUI환경으로 만들 수 있어요. Tcl로 이걸 할 일이 없더라구요. 그래서 제외를 했습니다.
