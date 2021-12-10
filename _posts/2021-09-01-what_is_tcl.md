@@ -100,6 +100,10 @@ puts $tcl_version
 
 3. set - 변수 저장입니다. set a 1 이렇게 쓰면, a에 1이 저장됩니다. 출력할 때는 puts $a 로 출력할 수 있습니다. 숫자든 문자열이든 배열이든 다 저장됩니다.
 
+global - 전역변수
+
+upvar - 변수의 참조범위 변경
+
 - 문자열의 경우, 이렇게 쓸 수 있어요.
 
 set myVariable "hello world" 혹은  set myVariable {hello world}
@@ -752,6 +756,77 @@ won
 
 만약에 % puts $myname( $index ) 이런식으로 한다면, 공백칸도 인덱스 값으로 인식하므로, % puts $myname($index)와 다르게 나오는 것을 확인 할 수 있으니 가급적 공백을 넣지 않는다.
 
+12. 파열 열기 닫기 쓰기 읽기
+
+파일열기
+
+if [ catch { open “my.dat” r } fileID ] { 
+
+puts stderr “Error : $fileID” 
+
+} else { 
+
+... 
+
+close $fileID 
+
+} 
+
+r = 읽기전용 r+= 읽고 쓰기 w= 쓰기전용 덮어쓰기 w+=  읽고쓰기 덮어쓰기 a=쓰기전용 파일 내용 보존 a+=읽고쓰기.
+
+
+
+파일 닫기
+
+set dataFileIN [ open ../DATA/result01.dat r ] 
+
+close $dataFileIn 
+
+
+
+파일 쓰기
+
+puts “Program Started” 
+
+set handle [open MyFileName w] 
+
+puts $handle “This line will be printed in MyFileName” 
+
+close $handle 
+
+puts “Program was over”
+
+
+
+13. 외부 프로그램 실행하기, 끄기
+
+실행하기
+
+if { [ catch { exec haha } errMessage ] } { 
+
+puts "Error : $errMessage" 
+
+} else { 
+
+puts “Result : $errMessage” 
+
+} 
+
+
+
+끄기
+
+if { ... } { 
+
+exit 1 
+
+} 
+
+
+
+파일 읽기
+
+파일을 여는 방법은 get과 read가 있고, get은 한줄씩(기본값) 읽거나 정해진 바이트씩, read는 전체를(기본값) 읽거나 정해진 바이트를 읽는다.
 
 
 마무리
