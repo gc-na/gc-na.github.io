@@ -9,10 +9,10 @@ My name is Gyeongchae Na. I have the following qualities:😎
 - Korean (Native) / English (Fluent) I'm not good at writing essay tbh.🤫 / Chinese (Beginner)
 - I/ESTJ Ambivert ꂒꂯ
 ### ⚒ Tech Stack ⚒
-- Verilog HDL / DC / PT / TMAX / ICC / ICC2 / VCS (on centos Linux)
-- RISC-V / ARM, AMBA
-- C / C++ / MFC / Python / Tcl / R / Kotlin
-- Atmega / STM / Arduino
+- Verilog HDL / DC(DCT,DCG) / PT / TMAX / ICC / VCS (on centos Linux) 💻
+- RISC-V / ARM, AMBA 📱
+- C / C++ / MFC / Python / Tcl / R / Kotlin / Django / Tcl (begginer) 🧑‍💻
+- Atmega / STM / Arduino / 8051 📻
 ### My story
 - I was born in 1997.
 - I like to blog about semiconductors, hiking, restaurants, and travel. I like to try __new__ things.<!-- I am preparing to enter law school⚖, and in the future I will become a patent attorney in the field of electronics. 👨‍🏫+👨‍🔧=🤯-->
