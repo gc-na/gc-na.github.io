@@ -6,6 +6,8 @@ tags: [Tcl, TK, Script]
 comments: true
 ---
 
+본 포스트는 원나라님의 'tcl/tk 기본'을 토대로 공부하여 쓴 글입니다. 원나라님 감사합니다^^
+
 Tcl(Tool Command Language)는 '티클'이라고 부르는 스크립트 언어입니다.
 
 프로그래밍 언어보다 사용하기 쉬워서, 프로그래밍 언어로 완성된 프로그램(임베디드 분야에 자주 쓰임)에 대한 '관리'할 때 쓰입니다.
@@ -310,7 +312,7 @@ orange : two = 2
 <script src="https://gist.github.com/gc-na/27bb41beda95b380e7a8e7646b2fd6ee.js"></script>
 
 
-8. 문자열 비교 함수
+8. 문자열 비교
 
 string1 string2 compare - string1과 string2를 사전순으로 비교합니다. 같으면 0을 반환하고, string1이 string2보다 앞에 오면 -1을 반환하고, 그렇지 않으면 1을 반환합니다.
 
@@ -340,6 +342,14 @@ __wordend__ findstring index - index에 있는 문자를 포함하는 단어 뒤
 
 __wordstart__ findstring index - index에 있는 문자를 포함하는 단어에서 첫 번째 문자의 findstring에 있는 인덱스를 반환합니다.
 
+- 자주 쓰는 코드
+
+if { [ string compare $var1 $var2 ] == 0 } { 
+
+   ... 
+
+}
+
 9. 함수. C언어와 형식이 같습니다. 
 
 proc add {a b} {
@@ -352,6 +362,71 @@ puts \[add 10 10\]
 
 - return문을 (반환값 없음) 사용해서 현재 함수를 끝내고, 다음 명령어로 가도록 할 수 있습니다.
 - return 1 같은 반환 값이 존재할 경우, 그 함수의 return 값으로 반환합니다.
+
+
+
+% proc yahoo { {a 2} {b 3} {c 4} } { 
+
+puts [expr $a + $b + $c] 
+
+} 
+
+% yahoo 
+
+9 
+
+% yahoo 4 
+
+11 
+
+% yahoo 4 5 
+
+13 
+
+% yahoo 4 5 6 
+
+15 
+
+% yahoo 4 5 6 7 
+
+called "yahoo" with too many arguments
+
+
+
+
+% proc hoho { a args } { 
+
+puts “a : $a” 
+
+puts “args : $args” 
+
+} 
+
+% hoho 
+
+no value given for parameter "a" to "hoho" 
+
+% hoho 1 
+
+a : 1 
+
+args : 
+
+% hoho 1 2 
+
+a : 1 
+
+args : 2 
+
+% hoho 1 2 3 4 5 6 
+
+a : 1 
+
+args : 2 3 4 5 6
+
+
+
+
 
 10. 존재 판별문. info
 
@@ -366,6 +441,316 @@ puts \[add 10 10\]
 % info exists bb 
 
 0
+
+11. 값을 조건에 맞춰 변수 설정을 돕는 scan
+
+% scan “0xA 010” “%x %o” hex oct 
+
+error 
+
+% scan “A 10” “%x %o” hex oct 
+
+2 
+
+% set hex 
+
+10 
+
+% set oct 
+
+8 
+
+% scan “abcABCdef” “%[a-z]” low 
+
+invalid command name "a-z" 
+
+% scan “abcABCdef” {%[a-z]} low 
+
+1 
+
+% set low 
+
+abc
+
+12. 붙이는 append, 나누는 split, join. 공백문자를 포함할때는 따옴표나 중괄호를 사용한다.
+
+% set fruit “app” 
+
+app 
+
+% append fruit le #참고로, lappend를 사용하면, set과 append가 한번에 된다.
+
+apple 
+
+% set fruit 
+
+apple 
+
+
+
+% set test_string host:address:phone:name 
+
+host:address:phone:name 
+
+% split $test_string : 
+
+host address phone name 
+
+
+
+% set myData { host address phone name } 
+
+host address phone name 
+
+% join $myData : 
+
+host:address:phone:name 
+
+
+
+
+% set a [list 1 2] 
+
+1 2 
+
+% set b [list 3 4] 
+
+3 4 
+
+% set c 5 
+
+5 
+
+% concat $a $b $c 6 7 
+
+1 2 3 4 5 6 7 
+
+13. 리스트의 개수, 비교, 정렬, 검색
+
+% llength { a b c d } 
+
+4 
+
+% llength { {a b} “c d” e} 
+
+3 
+
+% llength {} 
+
+0 
+
+% set kk [ list a b c ] 
+
+a b c 
+
+% llength $kk 
+
+3
+
+
+
+
+% lindex { a b c d } 1 
+
+b 
+
+% set k [list a b c d ] 
+
+a b c d 
+
+% lindex $k 0 
+
+a 
+
+
+
+% set k [list a b c d e f g] 
+
+a b c d e f g 
+
+% lrange $k 1 4 
+
+b c d e 
+
+% lrange $k 4 end 
+
+e f g 
+
+
+
+% linsert { 0 1 2 3} 2 a b c d 
+
+0 1 a b c d 2 3 
+
+% set k [list a b c d] 
+
+a b c d 
+
+% linsert $k 0 5 6 
+
+5 6 a b c d 
+
+
+
+% lreplace { 0 1 2 3 4 } 1 3 a b c d e 
+
+0 a b c d e 4 
+
+% lreplace { 0 1 2 3 4 } 2 end d 
+
+0 1 d
+
+
+
+% lsearch { apple air snow } a* 
+
+0 
+
+% lsearch -exact { apple air snow } apple 
+
+0 
+
+% set kk { test haha hello } 
+
+test haha hello 
+
+% lsearch $kk apple 
+
+-1 
+
+
+
+% lsort -ascii { Z m b B } 
+
+B Z b m 
+
+% lsort -dictionary { Z m b B } 
+
+B b m Z 
+
+% set k [list 7 3 5 1 ] 
+
+7 3 5 1 
+
+% lsort $k 
+
+1 3 5 7 
+
+% set k 
+
+7 3 5 1
+
+
+
+
+% set test_string host:address:phone:name 
+
+host:address:phone:name 
+
+% regexp {([a-z]+):([a-z]+):([a-z]+)} $test_string all p1 p2 p3 
+
+1 
+
+%set all 
+
+host:address:phone 
+
+% set p1 
+
+host 
+
+% set p2 
+
+address 
+
+% set p3 
+
+phone 
+
+% set test_string host:address:phone:name 
+
+host:address:phone:name 
+
+% regexp {([a-z]+):([a-z]+):([a-z]+)} $test_string all p1 p2 p3 
+
+1 
+
+%set all 
+
+host:address:phone 
+
+
+% set p1 
+
+host 
+
+% set p2 
+
+address 
+
+% set p3 
+
+phone 
+
+치환연산
+
+% set test_string everybody 
+
+% regsub {e} $test_string {E} sub_string 
+
+1 
+
+% set sub_string 
+
+Everybody 
+
+% regsub –all {e} $test_string {E} sub_string 
+
+2 
+
+% set sub_string 
+
+EvErybody 
+
+14. 배열로 데이터 나누기. (그냥 하나의 리스트로 만들면 데이터가 커진경우에 과부화 문제가 생긴다.)
+
+% set myname(last) won 
+
+won 
+
+% set lastname $myname(last) 
+
+won 
+
+% set firstname $myname(first) 
+
+can't read "myname(first)": no such element in array 
+
+% set myname(first) nara 
+
+nara 
+
+% set firstname $myname(first) 
+
+nara 
+
+% set fruit(0) apple 
+
+apple 
+
+% set fruitname $fruit(0) 
+
+apple 
+
+% set index last 
+
+last 
+
+% puts $myname($index) 
+
+won 
+
+만약에 % puts $myname( $index ) 이런식으로 한다면, 공백칸도 인덱스 값으로 인식하므로, % puts $myname($index)와 다르게 나오는 것을 확인 할 수 있으니 가급적 공백을 넣지 않는다.
 
 
 
