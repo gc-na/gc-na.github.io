@@ -11,7 +11,7 @@ My name is Gyeongchae Na. I have the following qualities:😎
 ### ⚒ Tech Stack ⚒
 - Verilog HDL / DC(DCT,DCG) / PT / TMAX / ICC / VCS (on centos Linux) 💻
 - RISC-V / ARM, AMBA 📱
-- C / C++ / MFC / Python / Tcl / R / Kotlin / Django / Tcl (begginer) 🧑‍💻
+- C / C++ / MFC / Python / R / Kotlin / Django / Tcl (begginer) 🧑‍💻
 - Atmega / STM / Arduino / 8051 📻
 ### My story
 - I was born in 1997.
