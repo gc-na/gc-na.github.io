@@ -1,8 +1,8 @@
 ---
 layout: post
-title: TCL 언어 script 예제. synopysis EDA tool의 기본 TCL 쓰는 이
-subtitle: Tcl 예제 몇문제..
-tags: [Tcl]
+title: Design Kit이란? DK란?
+subtitle: What is DK, Design Kit in vlsi?
+tags: [Design Kit, DK, STDCELL]
 comments: true
 ---
 
