@@ -51,7 +51,7 @@ $tclsh cat.tcl a b c sub.txt 하면, a, b, c 파일 모두 있다면 sub.txt가 
 
 input
 
-------------------------
+
 
 name1/data1/d Q\[3\]
 
@@ -75,7 +75,7 @@ name4/data1/d Q\[2\]
 
 name4/data1/d Q\[1\]
 
------------------------
+
 
 output
 
