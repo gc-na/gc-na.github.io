@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 메모리 설계하는 방법. Memory Compiler ARM artisan
-subtitle: How to design a Memory.
-tags: [ARM, Artisan, Memorycompiler]
+title: memory compiler
+subtitle: What is PVT and OCV, and the difference.
+tags: [PVT, OCV, CRPR]
 comments: true
 ---
 
