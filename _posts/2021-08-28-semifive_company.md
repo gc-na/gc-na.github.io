@@ -6,6 +6,10 @@ tags: [SEMIFIVE, SIFIVE, RISC-V]
 comments: true
 ---
 
+SiFive, SemiFive 회사 소개에 앞서, 사업의 첫 시작 아이템에 대해 소개하겠습니다.
+
+
+
 RISC-V는 __오픈소스__ ISA (Instruction Set Architecture)입니다. core를 만들기 위한 명령어 집합입니다.
 비슷한 회사로는 ARM이 있습니다. 애플이 M1 Core를 설계할 때 ARM의 아키텍쳐를 사용했죠.
 
@@ -16,6 +20,12 @@ RISC-V는 2010년에 버클리대학에서 [Krste교수님](https://en.wikipedia
 SiFive는 RISC-V ISA 연구개발을 통해 Chip License, ISA를 만드는 회사이고, MCU의 Chip이나 보드 또한 개발하고있습니다.
 
 한국에는 2018년 10월에 SiFive Korea로 들어섰고, 현재는 SEMIFIVE의 이름으로 독자적으로 운영되고 있습니다. 반도체 플랫폼 회사라고 불리는데, '반도체에 대한 아이디어만 갖고오면, 혹은 반도체를 좀 만들다가 중간에 오더라도, 완성된 칩을 만들어줄 수 있는 회사라고 보면 됩니다.'
+
+반도체 플랫폼을 간단히 요약하면,
+1. 원하는 아이디어를 실현 할 수 있는 로직,
+2. 원하는 견적(성능, 전력, 크기, 가격 등..)
+3. 위 두가지를 만족하면서 빠르고 싸고 검증된 반도체로 Tape-out
+
 
 대표님이 젊고, MIT에서 CPU 설계로 석박사,BCG에서의 경험도 있다고 합니다. (공학+경영 우와,,)
 
