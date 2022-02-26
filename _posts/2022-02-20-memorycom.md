@@ -18,7 +18,7 @@ dk의 정보대로, setenv한 후, 터미널에 tsmc의경우 rf1sh 이런식으
 
 rf는 register file이고, 1은 1포트... 이런식으로 이름에 rule이 있다.
 
-
+![M1](https://postfiles.pstatic.net/MjAyMjAyMjBfNDQg/MDAxNjQ1Mjg1OTk4MDY1.2PGPdO4qWKInVM7rAvFTDZK9-MwK1k47EXWPr4-yQgYg.yTjOzT84OZS36ASjUm0_2LY7T7c3geHfgq_Ma2qtcx4g.PNG.gc_na/arm111.png?type=w966)
 
 
 이거로 들어오면, 기본적으로 GUI로 접속하게된다.
@@ -26,7 +26,7 @@ rf는 register file이고, 1은 1포트... 이런식으로 이름에 rule이 있
 
 아래 화면은 이미 Update가 된 상태이다. 처음에는 각 칸들이 빈칸으로 나타난다.
 
-
+![M1](https://postfiles.pstatic.net/MjAyMjAyMjBfMjI1/MDAxNjQ1Mjg2MDk3ODYx.BwAPtzKnae8BYLLlpnlh28wsOmD5RxF-tAVe9SwY-9Ig.fSuGoZucDxccXhemM-XJHb1eHvIqm0NJ5AXhkWw9icEg.PNG.gc_na/ARM_GUI.png?type=w966)
 
 
 비트랑 워드 수를 맞춰줘야하는데, 이건 각 공정사의 가이드에 기준 문서가 존재한다.
