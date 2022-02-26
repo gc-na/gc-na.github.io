@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About me![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Chase&fontSize=50&fontColor=ffffff)
 subtitle: Why you'd want to go on a date with me
 ---
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Chase&fontSize=50&fontColor=ffffff)
@@ -10,9 +10,10 @@ My name is Chase. I have the following qualities:😎
 - Korean (Native) / English (Fluent) I'm not good at writing essay tbh.🤫 / Chinese (Beginner)
 - I/ESTJ Ambivert ꂒꂯ
 ### ⚒ Tech Stack ⚒
-- Verilog HDL / DC(DCT,DCG) / PT / TMAX / ICC / VCS (on centos Linux) 💻
-- RISC-V / ARM, AMBA 📱
-- C / C++ / MFC / Python / R / Kotlin / Django / Tcl 🧑‍💻
+- Verilog HDL / DC(DCT,DCG) / PT / TMAX / ICC / VCS (on centos Linux) / Memory Compiler 💻
+- Implementation experience in SEC 14nm.
+- RISC-V & ARM Core 📱
+- C / C++ / MFC / Python / R / Kotlin / Django / Tcl / Makefile 🧑‍💻
 - Atmega / STM / Arduino / 8051 📻
 ### My story
 - I was born in 1997.
