@@ -19,7 +19,7 @@ dk의 정보대로, setenv한 후, 터미널에 tsmc의경우 rf1sh 이런식으
 rf는 register file이고, 1은 1포트... 이런식으로 이름에 rule이 있다.
 
 
-![pvt vs delay](/assets/img/arm111.png)
+
 
 이거로 들어오면, 기본적으로 GUI로 접속하게된다.
 
@@ -28,7 +28,6 @@ rf는 register file이고, 1은 1포트... 이런식으로 이름에 rule이 있
 
 
 
-![pvt vs delay](/assets/img/ARM_GUI.png)
 
 비트랑 워드 수를 맞춰줘야하는데, 이건 각 공정사의 가이드에 기준 문서가 존재한다.
 
