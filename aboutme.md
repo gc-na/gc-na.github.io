@@ -3,7 +3,6 @@ layout: page
 \\title: About me
 \\subtitle: Why you'd want to go on a date with me
 ---
-\\![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Chase&fontSize=50&fontColor=ffffff)
 ![profile](/assets/img/profile.jpeg)
 My name is Chase. I have the following qualities:😎
 - I'm not afraid to be wrong, and I don't end up being wrong.
