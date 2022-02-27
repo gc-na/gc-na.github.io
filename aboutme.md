@@ -16,7 +16,7 @@ subtitle: SoC engineer who loves learning and sharing.
 
 ### ⚒ Tech Stack ⚒
 - C / C++ / MFC / Python / R / Kotlin / Django / Tcl / Makefile 🧑‍💻
-- Verilog HDL / DC(DCT,DCG) / PT / TMAX / ICC / VCS (on centos Linux) / Memory Compiler 💻
+- Verilog HDL / DC(DCT,DCG) / PT / TMAX / ICC / VCS / Memory Compiler 💻
 - RISC-V & ARM Core 📱
 - Implementation experience in SEC 14, 5nm.
 - Atmega / STM / Arduino / 8051 📻
