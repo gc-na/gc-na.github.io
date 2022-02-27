@@ -7,7 +7,7 @@ subtitle: SoC engineer who loves learning and sharing.
 
 
 
-<center>Bundang-Gu, Seongnam-Si🇰🇷 https://gc-na.github.io/ nawm33@gmail.com</center>
+<center>Seongnam-Si, Korea🇷 https://gc-na.github.io/ nawm33@gmail.com</center>
 
 Born : 나경채(羅景採, Na Gyeong-chae, Chase) August 23, 1997 (age 24)
 🇷
