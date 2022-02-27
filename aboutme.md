@@ -9,10 +9,10 @@ subtitle: SoC engineer who loves learning and sharing.
 
 <center>Seongnam-Si, Korea🇷 https://gc-na.github.io/ nawm33@gmail.com</center>
 
-Born : 나경채(羅景採, Na Gyeong-chae, Chase) August 23, 1997 (age 24)
-Occupation : SoC Physical Implementation engineer, SEMIFIVE (2021.12 ~ Present)
-Education : University of Hanyang (Master student of Electronic Engineering)
-Language : Korean (Native) / English (Fluent) not good at writing essay tbh.🤫
+- Born : 나경채(羅景採, Na Gyeong-chae, Chase) August 23, 1997 (age 24)
+- Occupation : SoC Physical Implementation engineer, SEMIFIVE (2021.12 ~ Present)
+- Education : University of Hanyang (Master student of Electronic Engineering)
+- Language : Korean (Native), English (Fluent) not good at writing essay tbh.🤫
 
 ### ⚒ Tech Stack ⚒
 - C / C++ / MFC / Python / R / Kotlin / Django / Tcl / Makefile 🧑‍💻
