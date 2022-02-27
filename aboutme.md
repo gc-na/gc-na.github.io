@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 나경채 羅景採 Chase Na
+title: 나경채 羅景採 Chase
 subtitle: SoC engineer who loves learning and sharing.
 ---
 ![profile](/assets/img/profile.jpeg)
