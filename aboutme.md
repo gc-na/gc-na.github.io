@@ -9,7 +9,7 @@ subtitle: SoC engineer who loves learning and sharing.
 
 <center>Seongnam-Si, Korea https://gc-na.github.io nawm33@gmail.com</center>
 
-- Born : __나경채(羅景採, Na Gyeong-chae, Chase)__ August 23, 1997 (age 24)
+- Born : 나경채(羅景採, Na Gyeong-chae, Chase) August 23, 1997 (age 24)
 - Occupation : SoC Physical Implementation engineer, [SEMIFIVE](https://semifive.com:4438/) (2021.12 ~ Present)
 - Education : [University of Hanyang, Seoul](https://www.hanyang.ac.kr/web/eng/home) (Master student of Electronic Engineering)
 - Certification : 5+ semiconductor design & verification education from Synopsys, SIEMENS, IDEC and SW covergence cluster
