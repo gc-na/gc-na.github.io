@@ -5,7 +5,7 @@ subtitle: SoC engineer who loves learning and sharing.
 ---
 ![profile](/assets/img/profile.jpeg)
 
-Bundang-Gu, Seongnam-Si | https:\//gc-na.github.io/ | nawm33@gmail.com
+Bundang-Gu, Seongnam-Si | https://gc-na.github.io/ | nawm33@gmail.com
 
 My name is Chase. I have the following qualities:😎
 - I'm not afraid to be wrong, and I don't end up being wrong.
