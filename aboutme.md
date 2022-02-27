@@ -21,5 +21,9 @@ subtitle: SoC engineer who loves learning and sharing.
 - Atmega / STM / Arduino / 8051 📻
 ### My story
 - Working experience in [National Museum of Modern and Contemporary Art](https://www.mmca.go.kr/eng/)🖼, Marina Bay Seoul🏩 and Hyundai Department Store🏬 for about 4 years.
-- Flight Armament in the Air Force for two years. ✈👨‍✈️ [C-130](https://en.wikipedia.org/wiki/Lockheed_C-130_Hercules) / [CN-235](https://en.wikipedia.org/wiki/CASA/IPTN_CN-235)
+- Flight Armament in the ROKAF 15th Special Missions Wing for two years. ✈👨‍✈️ [C-130](https://en.wikipedia.org/wiki/Lockheed_C-130_Hercules) / [CN-235](https://en.wikipedia.org/wiki/CASA/IPTN_CN-235)
+![mil](/assets/img/KakaoTalk_Photo_2022-02-28-00-15-13.jpeg)
+
+
+
 Tbh I'm having some trouble remembering atm, so why don't you just visit [my daily blog](https://blog.naver.com/gc_na) and it will answer **all** your questions.
