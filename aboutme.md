@@ -11,7 +11,6 @@ subtitle: SoC engineer who loves learning and sharing.
 
 Born : 나경채(羅景採, Na Gyeong-chae, Chase) August 23, 1997 (age 24)
 
-🇷
 Occupation : SoC Physical Implementation engineer, SEMIFIVE (2021.12 ~ Present)
 
 Education : University of Hanyang (Master student of Electronic Engineering)
