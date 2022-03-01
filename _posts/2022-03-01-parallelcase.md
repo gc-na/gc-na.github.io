@@ -2,7 +2,7 @@
 layout: post
 title: verilog parallel case란? infer_mux란?
 subtitle: what is synopsys parallel case in vlsi?
-tags: [verilog coding]
+tags: [verilog coding style]
 comments: true
 ---
 
