@@ -15,7 +15,7 @@ comments: true
 ​
 
 if문을 사용하면 아래의 회로가 생긴다.
-[M1](https://blogfiles.pstatic.net/MjAyMjAzMTJfMjk2/MDAxNjQ3MDc1MDA3MTk1.NOHlNlePk2sFZg0H8N6M80WBtvL7fa862pTmHsT79gog.Ha5qHq1-F4afp0nnlPb15ICgXnNv_9R3tWhdAVeg82gg.PNG.gc_na/image.png?type=w1)
+![M1](https://blogfiles.pstatic.net/MjAyMjAzMTJfMjk2/MDAxNjQ3MDc1MDA3MTk1.NOHlNlePk2sFZg0H8N6M80WBtvL7fa862pTmHsT79gog.Ha5qHq1-F4afp0nnlPb15ICgXnNv_9R3tWhdAVeg82gg.PNG.gc_na/image.png?type=w1)
 
 case문도 마찬가지이다. 입력이 10개면 10to1 mux가 생기는 것이다!
 
@@ -31,7 +31,7 @@ assgin C = B ? A : 1'bz; 라는 코드가 있다면, 아래처럼 합성된다.
 
 
 ​
-[m1](https://blogfiles.pstatic.net/MjAyMjAzMTJfMjU5/MDAxNjQ3MDc1MjE3OTg0.bJRxgKjcGqResk7TBh48MOTV7b3wDzZjSdkkyLRnXn8g.VB9pOdo9iInJpJcakvdUDLB0y1EbA2rqXVe-K5VNtPQg.PNG.gc_na/image.png?type=w1)
+![m1](https://blogfiles.pstatic.net/MjAyMjAzMTJfMjU5/MDAxNjQ3MDc1MjE3OTg0.bJRxgKjcGqResk7TBh48MOTV7b3wDzZjSdkkyLRnXn8g.VB9pOdo9iInJpJcakvdUDLB0y1EbA2rqXVe-K5VNtPQg.PNG.gc_na/image.png?type=w1)
 ​
 
 1'bz를 안쓰고 다른거 쓰면 3상연산자도 mux가 합성되긴 함.
