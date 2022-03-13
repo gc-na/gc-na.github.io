@@ -41,7 +41,7 @@ C=A, C=B 이런식으로 코드를 쓰면, A와 B의 출력이 동시에 C라는
 
 2. Y=AA'라는 회로가 있다면? 이상적으로 생각하면, 항상 Y는 0으로 값이 고정 되겠죠? 실제론 그렇지 않습니다.
 
-![Monster job](/assets/img/dsfasdfsdsasf.png)
+![Monster job](/assets/img/fffggfdgfdag.png)
 
 A와 A에 인버터 달린 회로가 AND게이트의 입력으로 나가고, AND게이트의 출력으로 나올 것입니다.
 
@@ -64,7 +64,7 @@ A'는 A에서 인버터를 지나는 시간 때문에 1초 늦게 0으로 바뀐
 
 Z는 제 3의 상태라고 합니다. pspice나.. 전자캐드를 사용하다보면, floating되었다고 자주 보실겁니다. 선이 연결이 안되어, 높은 저항값을 갖고있는 High Impidance이죠.
 
-![Monster job](/assets/img/fffggfdgfdag.png)
+![Monster job](/assets/img/dsfasdfsdsasf.png)
 
 
 학부에서는 0/1/X/Z까지만 배우죠. 다음으로 하는 Metastability는 조금 어려울 수 있습니다.
