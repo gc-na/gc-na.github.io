@@ -6,7 +6,7 @@ tags: [DRC, Capacitance, Transition, Fanout]
 comments: true
 ---
 
-우선, [wikipedia](https://en.wikipedia.org/wiki/Metastability_(electronics)에 자세한 정보가 나와있으니, 참고하시길 바랍니다. 
+우선, [wikipedia](https://en.wikipedia.org/wiki/Metastability_(electronics) 에 자세한 정보가 나와있으니, 참고하시길 바랍니다. 
 
 
 X(don't care, Unknown) -> Z(High Impidance) -> Metastability 순으로 설명하겠습니다.
