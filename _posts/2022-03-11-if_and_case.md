@@ -16,7 +16,8 @@ comments: true
 
 if문을 사용하면 아래의 회로가 생긴다.
 
-![Monster job](/assets/img/ggewrgjnjkerq.png)
+
+![Monster job](/assets/img/efhivbek.png)
 
 case문도 마찬가지이다. 입력이 10개면 10to1 mux가 생기는 것이다!
 
@@ -32,7 +33,8 @@ assgin C = B ? A : 1'bz; 라는 코드가 있다면, 아래처럼 합성된다.
 
 
 ​
-![Monster job](/assets/img/efhivbek.png)
+
+![Monster job](/assets/img/ggewrgjnjkerq.png)
 ​
 
 1'bz를 안쓰고 다른거 쓰면 3상연산자도 mux가 합성되긴 함.
