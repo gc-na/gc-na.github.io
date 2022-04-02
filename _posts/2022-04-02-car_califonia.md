@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 반도체 칩 공정 과정 반도체 8대공정 半导体的8大工艺
-subtitle: 8 major processes in semiconductor
-tags: [Semiconductor Process]
+title: 전기 자동차 산업 구조 - 에너지
+subtitle: Electric car industry
+tags: [ISO262262 Electric car PHEV]
 comments: true
 ---
 
