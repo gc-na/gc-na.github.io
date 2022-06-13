@@ -75,7 +75,7 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
-  vk: false
+  vk: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -99,14 +99,6 @@ post_search: true
 # --- Colours / background image --- #
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
-
-<script src="https://utteranc.es/client.js"
-        repo="gc-na/gc-na.github.io/comments"
-        issue-term="pathname"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async>
-</script>
 
 navbar-col: "#EAEAEA"
 navbar-text-col: "#404040"
