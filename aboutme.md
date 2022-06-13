@@ -30,3 +30,14 @@ subtitle: SoC engineer who loves learning and sharing.
 Tbh I'm having some trouble remembering atm, so why don't you just visit [my daily blog](https://blog.naver.com/gc_na) and it will answer **all** your questions.
 
 You can also find me on [LinkedIn](https://www.linkedin.com/in/chase-na-106856205/)
+
+### Guese Book
+
+<script src="https://utteranc.es/client.js"
+        repo="gc-na/gc-na.github.io"
+        issue-term="pathname"
+        label="utterances"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
