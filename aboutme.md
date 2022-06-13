@@ -34,7 +34,7 @@ You can also find me on [LinkedIn](https://www.linkedin.com/in/chase-na-10685620
 ### Guese Book
 
 <script src="https://utteranc.es/client.js"
-        repo="gc-na/gc-na.github.io"
+        repo="gc-na/utterances"
         issue-term="pathname"
         label="utterances"
         theme="preferred-color-scheme"
