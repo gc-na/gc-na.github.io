@@ -1,8 +1,8 @@
 ---
 layout: post
-title: DFT, MBIST 하는 이유. 미세공정
-subtitle: #DFT #MBIST
-tags: [DFT, MBIST]
+title: 현대 Low power design. Multibit Flip란 flop in vlsi
+subtitle: #Lowpower #Multibit #DSM
+tags: [DFT, MBIST. Multibit]
 comments: true
 ---
 
