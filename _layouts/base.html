@@ -25,14 +25,15 @@ common-js:
 {% include head.html %}
 
 <body>
+  
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v15.0" nonce="Q6vgFH58"></script>
 
   {% include gtm_body.html %}
 
   {% include nav.html %}
 
   {{ content }}
-  
-  <div class="fb-comments" data-href="{{ site.url | append: page.url }}" data-width="100%" data-numposts="5"></div>
 
   {% include footer.html %}
 
