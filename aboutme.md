@@ -41,3 +41,8 @@ You can also find me on [LinkedIn](https://www.linkedin.com/in/chase-na-10685620
         crossorigin="anonymous"
         async>
 </script>
+
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v15.0" nonce="zj4Mux1t"></script>
