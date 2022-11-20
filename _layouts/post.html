@@ -2,6 +2,8 @@
 layout: base
 ---
 
+
+
 {% include header.html type="post" %}
 <div class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
   <div class="row">
@@ -29,6 +31,8 @@ layout: base
           {% endif %}
         </div>
       {% endif %}
+      
+
 
       {% if page.before-content %}
         <div class="before-content">
@@ -75,15 +79,24 @@ layout: base
         </li>
         {% endif %}
       </ul>
-      {% include comments.html %}
-            <script src="https://utteranc.es/client.js"
-        repo="gc-na/gc-na.github.io"
-        issue-term="title"
-        theme="github-light"
+</script>
+    </div>
+  </div>
+<script src="https://giscus.app/client.js"
+        data-repo="gc-na/utterances"
+        data-repo-id="R_kgDOHfrHLw"
+        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ko"
+        data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
-      
-    </div>
-  </div>
 </div>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v15.0" nonce="zj4Mux1t"></script>
