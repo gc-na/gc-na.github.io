@@ -36,7 +36,11 @@ common-js:
 
   {% include footer-scripts.html %}
   
-  <div class="fb-comments" data-href="https://vlsi.kr/" data-width="100%" data-numposts="1"></div>
+  <div    class="fb-comments" 
+        data-href='"{{ site.url | append: page.url }}"'
+        data-width="100%" 
+        data-numposts="5">
+</div>
 
 </body>
 </html>
