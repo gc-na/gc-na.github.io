@@ -24,7 +24,7 @@ DSM으로 진입하며, 설계도와 Chip간 괴리가 커지게 되었습니다
 
 이를 보완하기 위해 설계 엔지니어 <-> 공정 엔지니어 간 회의를 통해 주고받던 data 들이 정리가 되어 외부 고객들에게 제공 되었습니다.
 
-![ba](/assets/img/2023020714.png)  
+![ba](/assets/img/2023020714.PNG)  
 
 위 그림에는 PDK Flow가 설명되어있는데, DSM으로 들어가면서 과정들이 조금 더 추가되었습니다만... 위 과정과 거의 같습니다. 그리고 제가 Foundry engineer가 아니라, 자세한 과정을 쓰긴 어렵네요... 학교에서 배운게 전부여서..ㅎㅎ
 
@@ -48,4 +48,4 @@ Foundry에 소자공정개발, 설계 지원팀으로 가면 PDK 개발, Library
 
 아래는 PDK를 이용해 RTL을 Logical & Physical synthesis한 후, Test하는 과정이 나와있습니다.
 
-![ba](/assets/img/2023020715.png)
+![ba](/assets/img/2023020715.PNG)
