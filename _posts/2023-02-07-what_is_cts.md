@@ -2,7 +2,7 @@
 layout: post
 title: CTS란, Clock Tree Synthesis란
 subtitle: #CTS #P&R #ASIC
-tags: [Physical Design]
+tags: [PhysicalDesign]
 comments: true
 ---
 
