@@ -28,11 +28,11 @@ Backpropagation 알고리즘은 인공신경망에서 발생한 오차(error)를
 
 이 기법은 2-layer 이상인 Deep learning에서 유리합니다.
 
-![b1](/asset/img/0709/backpro1.png)
+![b1](/assets/img/0709/backpro1.png)
 
-![b1](/asset/img/0709/backpro2.png)
+![b1](/assets/img/0709/backpro2.png)
 
-![b1](/asset/img/0709/backpro3.png)
+![b1](/assets/img/0709/backpro3.png)
 
 Backpropagation은 인공지능의 입문자들이 슬슬 떠나게 되는 계기가 되는.. 처음에 이해하기가 어려운 부분입니다! 아래 유튜브에 한글 자막도 있으니, 참고해주세요~
 
