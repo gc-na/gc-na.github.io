@@ -28,11 +28,11 @@ Backpropagation 알고리즘은 인공신경망에서 발생한 오차(error)를
 
 이 기법은 2-layer 이상인 Deep learning에서 유리합니다.
 
-![b1](https://postfiles.pstatic.net/MjAyMzA0MTBfMTQw/MDAxNjgxMTM1OTI5MTk0.qDHEkBL9sK8wpO5huEasdeY4CUPo9ffsScj8hAiy2qcg.baqsZ4DU2QXDDvsstI9whi4zC4F4gcpBGicffXbOTDog.PNG.gc_na/image.png?type=w966)
+![b1](/asset/img/0709/backpro1.png)
 
-![b2](https://postfiles.pstatic.net/MjAyMzA0MTFfMTQ5/MDAxNjgxMjIxNzM4NDMw.CB6ttioFXQ2Xwdsy2rbEZO8dtlSfJ6mCkabfTMpElZ8g.THp--iphJwRKIwlcSQrXXyByuPUGzAp8KooPb20K1Xwg.PNG.gc_na/image.png?type=w966)
+![b1](/asset/img/0709/backpro2.png)
 
-![b3](https://postfiles.pstatic.net/MjAyMzA0MTFfMjEz/MDAxNjgxMjIxNzU0ODM0.bmsR2A1NOS1ixV9ATWlxXc0k_8n9ekbb_AzQMsV0XGwg.DT5ZjwD6B0mkWizG4_C7QdFRbXkSMqBhjBaczk266Vwg.PNG.gc_na/image.png?type=w966)
+![b1](/asset/img/0709/backpro3.png)
 
 Backpropagation은 인공지능의 입문자들이 슬슬 떠나게 되는 계기가 되는.. 처음에 이해하기가 어려운 부분입니다! 아래 유튜브에 한글 자막도 있으니, 참고해주세요~
 

@@ -23,7 +23,7 @@ Activation function은 일종의 f(x)같은 함수입니다.
 
 
 
-![ba](​https://postfiles.pstatic.net/MjAyMzA0MTBfMTUy/MDAxNjgxMTM3MDQ1MTc4.cDymRNw923Q9UADpp5UqiKhIjy4TkmMS7eBK7Avh_-Yg.AjeQzXgd4ecz-eXYbfTYTdM_yU9TW4l-XxcXsvXx2rIg.PNG.gc_na/image.png?type=w966)
+![ba](/asset/img/0709/sigmoid1)
 
 ​
 
@@ -41,7 +41,7 @@ Activation function은 이진 분류, 다중 분류, 회귀 등 다양한 인공
 
 아래 잘 설명된 예시가 있어서 갖고왔습니다. 한번 천천히 읽어보고 이해해보면 좋을 것 같습니다.
 
-​![ba](https://postfiles.pstatic.net/MjAyMzA0MTBfMTMy/MDAxNjgxMTM3NTQzMDA0.RMIdRbnLH8vZRNx0CLzgGNJcfioy-9PyErqCvzpkYlAg.Cw1Nz90moM1tonQHANq6GdhzZIHTOsa6QUL5wu0-SuIg.PNG.gc_na/image.png?type=w966)
+​![ba](/asset/img/0709/sigmoid2)
 
 
 Sigmoid 함수는 다음과 같이 정의됩니다:
