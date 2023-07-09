@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 반도체 나노 공정 뜻 의미, CMOS MOSFET 개념 半导体纳米工艺意义，CMOS MOSFET 概念
-subtitle: #미세공정 #나노공정 #CMOS #MOSFET #무어의법칙 #精细工程
-tags: [미세공정, 나노공정, CMOS, MOSFET, 무어의법칙, 精细工程]
+title: Error Backpropagation 유도하기
+subtitle: #AI #ML #DL
+tags: [머신러닝]
 comments: true
 ---
 
