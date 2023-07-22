@@ -9,7 +9,7 @@
 title: VLSI Korea
 
 # Your name to show in the footer
-author: Chase
+author: 나경채
 
 # --- List of links in the navigation bar --- #
 
@@ -79,7 +79,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "디지털 VLSI 한국어 정보"
+url-pretty: "VLSI Korea"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
