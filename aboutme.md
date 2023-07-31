@@ -8,7 +8,7 @@ subtitle: SoC engineer who loves learning and sharing.
 
 <center>나경채(a.k.a. Chase)입니다.</center>
 
-![profile](/assets/img/whoami_profile.jpg)
+![profile](/assets/img/whoami_profile.jpg){: width="100%" height="100%"}
 
 VLSI에 대해 나만 보기엔 너무 아까워서 이 블로그를 만들었습니다.
 
