@@ -8,6 +8,8 @@ subtitle: SoC engineer who loves learning and sharing.
 
 <center>나경채(a.k.a. Chase)입니다.</center>
 
+![profile](/assets/img/whoami_profile.jpg)
+
 VLSI에 대해 나만 보기엔 너무 아까워서 이 블로그를 만들었습니다.
 
 저는 [세미파이브](https://semifive.com/)에서 반도체 디자인 플랫폼을 만들고 있습니다.
