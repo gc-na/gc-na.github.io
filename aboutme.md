@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 나경채 Chase
-subtitle: SoC engineer who loves learning and sharing.
+subtitle: VLSI engineer who loves learning and sharing.
 ---
 
 
@@ -12,9 +12,9 @@ Contact : gc@vlsi.kr
 
 ![title](/assets/img/whoami_profile.jpg){: width="100%" height="100%"}{: .center}
 
-저는 지금 [세미파이브](https://semifive.com/)에서 반도체 디자인 플랫폼을 만들고 있습니다.
+저는 [세미파이브](https://semifive.com/)에서 반도체 디자인 플랫폼을 만들고 있습니다.
 
-전문분야는 NPU와 High speed IP의 PI/PD/DFT입니다.
+전문분야는 AI accelerator와 High speed IP에서의 PI/PD/DFT입니다.
 
 취미부자인 저는 [daily blog](https://blog.naver.com/gc_na)에서 **개인 일상**을 공유하고 있습니다.
 
