@@ -10,7 +10,7 @@ subtitle: VLSI engineer who loves learning and sharing.
 
 Contact : gc@vlsi.kr
 
-![title](/assets/img/whoami_profile.jpg){: width="100%" height="100%"}{: .center}
+![title](/assets/img/chase1.jpg){: width="100%" height="100%"}{: .center}
 
 [세미파이브](https://semifive.com/)에서 **반도체 설계 플랫폼**🖥️을 만들고 있는 Chase 입니다.
 
