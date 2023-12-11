@@ -29,6 +29,7 @@ VLSI Korea의 VLSI는 Very Large Scale Integraed Circuit입니다. 아래처럼 
 
 제 머릿속을 디렉토리처럼 표현하면, /Physics/ElectroMagnetism/ElectronicEngineering/DigitalDesign/VLSI/Methodology 입니다.
 방법론만 연구한건 아니고, Highspeed IP, NPU로 tape out 해봤습니다.
+
 ​
 운이 좋게도 학부 때부터 최고의 반도체 조직과 연계되어 설계, 검증, DFT, Physical Design과 같은 분야에서 ASIC Flow를 직접 경험해볼 수 있었습니다.
 아직 이 분야의 전문가는 아니지만, 하루도 멈추지 않고 노력하고 있습니다. 제가 공부했던 것을 복습하며, 처음 이걸 접하시는 분들께는 더 효율적으로 이해할 수 있도록 노력하고 있습니다.
