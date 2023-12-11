@@ -57,6 +57,7 @@ VLSI Korea의 VLSI는 Very Large Scale Integraed Circuit입니다. 아래처럼 
 - SDC & STA : Constraining Designs for Synthesis and Timing Analysis: A Practical Guide to Synopsys Design Constraints (SDC), Sridhar Gangadharan
 - Low Power : An ASIC Low Power Primer, Chadha
 - Verification : System Verilog Assertions and Functional Coverage: Guide to Language, Methodology and Applications, Ashok B. Mehta
+- Liberty : Characterization and modeling of digital circuits, Rohit Sharma
 
 감사합니다.
 
