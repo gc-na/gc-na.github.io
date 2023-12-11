@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 나경채 | Chase Na | 羅景埰
-subtitle: VLSI Engineer: ASIC Implementation and Methodology
+subtitle: VLSI Engineer, ASIC Implementation and Methodology
 ---
 
 Contact : gc@vlsi.kr | [daily blog](https://blog.naver.com/gc_na)
