@@ -14,8 +14,6 @@ I believe
 
 - Knowledge is power.
 
-Work experience: Highspeed IP & NPU, RTL2GDS(PI, PD, and DFT) on SAMSUNG 5~14nm process.
-
 ![title](/assets/img/chase1.jpg){: width="100%" height="100%"}{: .center}
 
 ### Guest Book
