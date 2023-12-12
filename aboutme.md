@@ -49,6 +49,8 @@ VLSI Korea의 VLSI는 Very Large Scale Integraed Circuit입니다. 아래처럼 
 
 질문은 제 본업을 마치고 쉬는 시간에 알려드릴게요. 아는건 알려드리고, 모르는건 배워서 알려드리겠습니다. 제 블로그 첫번째 목표는 최신 반도체 정보를 한국어로 알려드림이었으니까요.
 
+![title](/assets/img/introduction_to_vlsi_systems.jpg){: width="100%" height="100%"}{: .center}
+
 주로 참고하는 책
 - Analog : Razavi, Electronics
 - EDA : Electronic Design Automation: Synthesis, Verification, and Test, Laung-TerngWang
