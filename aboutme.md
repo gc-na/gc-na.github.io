@@ -4,7 +4,7 @@ title: Chase Na
 subtitle: VLSI Engineer, ASIC Implementation and Methodology
 ---
 
-Contact: <gc@vlsi.kr> or [daily blog](https://blog.naver.com/gc_na)
+Contact: <gc@vlsi.kr> or [my naver blog](https://blog.naver.com/gc_na)
 
 I believe
 - Moore's Law is over, and all companies need their own "bespoke silicon".
