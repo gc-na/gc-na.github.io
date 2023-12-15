@@ -10,14 +10,12 @@ I believe
 - Moore's Law is over, and all companies need their own "bespoke silicon".
 - That custom silicon should be made accessible to everyone in the most efficient way.🤔
 
-![title](/assets/img/chase1.jpg){: width="90%" height="90%"}{: .center}
-
 안녕하세요? VLSI Korea의 Chase입니다.
 저는 성취와 나눔에 대한 욕구가 있어요.
 블로그는 이것들을 이룰 수 있는 가장 가까운 매체라서, 기쁜 마음으로 취미생활하고 있습니다.
 덤으로 우리 회사가 얼마나 좋은 기술 갖고 있는지 뽐낼 수도 있구요  :)
 
-![title](/assets/img/IMG_5201.jpg){: width="100%" height="100%"}{: .center}
+![title](/assets/img/IMG_5141.jpg){: width="90%" height="90%"}{: .center}
 
 학부 때는 전공 학과에 개설된 모든 전공을 수강했고,
 학부 3학년~대학원~회사에서부터 "반도체 집적회로 설계" 에 전문성을 키우고 있습니다. 
@@ -34,6 +32,8 @@ VLSI Korea의 VLSI는 Very Large Scale Integraed Circuit입니다. 아래처럼 
 아직 이 분야의 전문가는 아니지만, 제 블로그를 보면 알 수 있듯.. 하루도 멈추지 않고 노력하고 있습니다.
 저는 제가 공부했던 것을 복습하고, 우리 회사가 얼마나 좋은 회사인지도 알리고, 처음 이걸 접하시는 분들께는 더 효율적으로 이해할 수 있도록 노력하고 있습니다.
 (세부 기술 구현 내용은 사내 위키에서만 올리니까, 제가 있는 회사로 Join하세요!)
+
+![title](/assets/img/chase1.jpg){: width="90%" height="90%"}{: .center}
 
 반도체 외에는
 
