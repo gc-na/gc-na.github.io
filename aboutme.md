@@ -4,7 +4,8 @@ title: Chase Na
 subtitle: VLSI Engineer, ASIC Implementation and Methodology
 ---
 
-Contact: <gc@vlsi.kr> or [my naver blog](https://blog.naver.com/gc_na) Since 2024, I only post on Korean website "NAVER" to get  influencer.
+Contact: <gc@vlsi.kr>
+Since 2024, I only post on [NAVER Blog](https://blog.naver.com/gc_na) to get NAVER influencer.
 
 I believe
 - Moore's Law is over, and all companies need their own "bespoke silicon".
