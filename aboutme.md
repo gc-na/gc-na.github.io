@@ -72,7 +72,7 @@
         <div class="profile-container">
             <img src="/assets/img/IMG_5141.JPG" alt="Chase Na" class="profile-image">
             <h2>Chase Na, 나경채</h2>
-            <h3>VLSI Engineer, ASIC Implementation and Methodology</h3>
+            <h3>VLSI Engineer</h3>
         </div>
         
         <div class="content-container">
