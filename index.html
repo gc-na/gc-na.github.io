@@ -1,56 +1,199 @@
----
-layout: page
-title: About Me
----
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <img src="/path/to/your/profile-image.jpg" alt="Your Name" class="img-fluid rounded-circle mb-4" width="300">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLSI Dictionary - Semiconductor Innovation in the Cosmic Realm</title>
+    <style>
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @keyframes galaxyFlow {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #ffffff;
+            overflow-x: hidden;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 4em;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            color: #f0f0f0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        p, ul {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info a:hover {
+            color: #f0f0f0;
+        }
+        .wafer-moon {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+            position: relative;
+        }
+        #galaxy {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            background: linear-gradient(to right, 
+                transparent,
+                rgba(25,25,112,0.2) 20%, 
+                rgba(65,105,225,0.2) 40%, 
+                rgba(138,43,226,0.2) 60%, 
+                rgba(65,105,225,0.2) 80%, 
+                rgba(25,25,112,0.2));
+            animation: galaxyFlow 60s linear infinite;
+        }
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 3s infinite ease-in-out;
+        }
+        .shooting-star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="galaxy"></div>
+    <div class="container">
+        <svg class="wafer-moon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#CCCCCC;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#999999;stop-opacity:1" />
+                </linearGradient>
+                <pattern id="waferPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <rect x="0" y="0" width="20" height="20" fill="none" stroke="#666666" stroke-width="0.5"/>
+                    <circle cx="10" cy="10" r="2" fill="#666666"/>
+                </pattern>
+            </defs>
+            <circle cx="100" cy="100" r="90" fill="url(#moonGradient)"/>
+            <circle cx="100" cy="100" r="90" fill="url(#waferPattern)"/>
+            <path d="M100 10 A90 90 0 0 1 190 100 A90 90 0 0 1 100 190 A90 90 0 0 1 10 100 A90 90 0 0 1 100 10 Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+            <circle cx="70" cy="70" r="15" fill="#555555" opacity="0.7"/>
+            <circle cx="130" cy="110" r="20" fill="#555555" opacity="0.7"/>
+            <circle cx="50" cy="130" r="10" fill="#555555" opacity="0.7"/>
+        </svg>
+        
+        <h1>VLSI Dictionary</h1>
+        <p class="subtitle">우주의 신비를 담은 나노 기술의 혁신가</p>
+        
+        <p>환영합니다! 저는 <span class="highlight">VLSI(Very Large Scale Integration)</span> 분야의 최전선에서 활약하고 있는 전문가입니다. 우주의 신비와 나노 기술의 정교함이 만나는 경이로운 혁신의 여정에 함께해 주세요.</p>
+        
+        <p>전문 분야:</p>
+        <ul>
+            <li>우주 탐사용 초고집적 반도체 설계</li>
+            <li>양자 효과를 활용한 차세대 컴퓨팅 아키텍처</li>
+            <li>우주 방사선 내성 트랜지스터 기술</li>
+            <li>초저전력 인공위성용 집적회로 개발</li>
+            <li>행성 탐사 로봇을 위한 AI 반도체 솔루션</li>
+        </ul>
+        
+        <div class="contact-info">
+            <p>우주와 나노 기술의 융합에 대한 아이디어를 나누고 싶으신가요? 연락주세요:</p>
+            <p>Email: <a href="mailto:gc@vlsi.kr">gc@vlsi.kr</a></p>
+            <p>더 깊이 있는 기술 토론을 원하신다면:</p>
+            <ul>
+                <li><a href="https://blog.naver.com/gc_na" target="_blank">NAVER Blog - 우주 반도체 기술 분석</a></li>
+                <li><a href="https://cafe.naver.com/damnang2" target="_blank">NAVER Cafe - 혁신적 우주 반도체 전문가 네트워크</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="col-md-6">
-      <h1 class="display-4 mb-4">VLSI Dictionary</h1>
-      <p class="lead">A brief introduction about yourself, your interests, and your passion for semiconductors and VLSI.</p>
-      <p>You can add more details about your background, education, work experience, or any other relevant information you'd like to share.</p>
-      <p>Feel free to customize this page to showcase your personality and style!</p>
-    </div>
-  </div>
-</div>
+    
+    <script>
+        function createStars() {
+            const galaxy = document.getElementById('galaxy');
+            const starCount = 400;
 
-<div class="bg-light py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <h2>Explore the World of VLSI</h2>
-        <p>Check out my <a href="/blog">blog posts</a> to learn more about semiconductors and VLSI.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="/path/to/vlsi-image.jpg" alt="VLSI" class="img-fluid rounded shadow">
-      </div>
-    </div>
-  </div>
-</div>
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = `${Math.random() * 2 + 1}px`;
+                star.style.height = star.style.width;
+                star.style.left = `${Math.random() * 200}%`;
+                star.style.top = `${Math.random() * 100}%`;
+                star.style.animationDelay = `${Math.random() * 3}s`;
+                galaxy.appendChild(star);
+            }
+        }
 
-<div class="container my-5">
-  <h2>Contact Me</h2>
-  <ul class="list-inline">
-    <li class="list-inline-item">
-      <a href="mailto:gc@vlsi.kr">
-        <i class="fas fa-envelope fa-2x"></i>
-        <span class="ml-2">gc@vlsi.kr</span>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://blog.naver.com/gc_na" target="_blank">
-        <i class="fab fa-blogger fa-2x"></i>
-        <span class="ml-2">NAVER Blog</span>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://cafe.naver.com/damnang2" target="_blank">
-        <i class="fas fa-mug-hot fa-2x"></i>
-        <span class="ml-2">NAVER Cafe</span>
-      </a>
-    </li>
-  </ul>
-</div>
+        createStars();
+
+        document.addEventListener('click', createShootingStar);
+
+        function createShootingStar(e) {
+            const star = document.createElement('div');
+            star.className = 'shooting-star';
+            star.style.left = `${e.clientX}px`;
+            star.style.top = `${e.clientY}px`;
+
+            const angle = Math.random() * Math.PI * 2;
+            const speed = 10 + Math.random() * 10;
+            const distance = 100 + Math.random() * 200;
+
+            star.animate([
+                { transform: `rotate(${angle}rad) translate(0, 0) scale(1)`, opacity: 1 },
+                { transform: `rotate(${angle}rad) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) scale(0.1)`, opacity: 0 }
+            ], {
+                duration: distance / speed * 100,
+                easing: 'ease-out'
+            });
+
+            document.body.appendChild(star);
+
+            setTimeout(() => {
+                document.body.removeChild(star);
+            }, distance / speed * 100);
+        }
+    </script>
+</body>
+</html>
