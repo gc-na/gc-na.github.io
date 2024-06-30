@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,6 @@
             background: #000;
             color: #ffffff;
             overflow-x: hidden;
-            cursor: pointer;
         }
         .container {
             max-width: 1200px;
@@ -93,25 +92,25 @@
             border-radius: 50%;
             animation: twinkle 3s infinite ease-in-out;
         }
-        .shooting-star {
-            position: absolute;
-            width: 2px;
-            height: 2px;
-            background: #fff;
-            transform: rotate(45deg);
-        }
-        .about-me-link {
+        .about-me-link, .social-link {
             display: inline-block;
-            margin-top: 20px;
+            margin: 10px;
             padding: 10px 20px;
             background-color: rgba(255, 255, 255, 0.2);
             color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.3s;
         }
-        .about-me-link:hover {
+        .about-me-link:hover, .social-link:hover {
             background-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
         }
     </style>
 </head>
@@ -138,42 +137,29 @@
         </svg>
         
         <h1>VLSI Dictionary</h1>
-        <p class="subtitle">우주의 신비를 담은 나노 기술의 혁신가</p>
+        <p class="subtitle">Innovator in Nano Technology, Inspired by Cosmic Mysteries</p>
         
-        <p>환영합니다! 저는 <span class="highlight">VLSI(Very Large Scale Integration)</span> 분야의 최전선에서 활약하고 있는 전문가입니다. 우주의 신비와 나노 기술의 정교함이 만나는 경이로운 혁신의 여정에 함께해 주세요.</p>
+        <div class="social-links">
+            <a href="https://blog.naver.com/gc_na" target="_blank" class="social-link">NAVER Blog - Space Semiconductor Tech Analysis</a>
+            <a href="https://cafe.naver.com/damnang2" target="_blank" class="social-link">NAVER Cafe - Innovative Space Semiconductor Expert Network</a>
+            <a href="https://vlsi.kr/aboutme/" class="about-me-link">View My Profile</a>
+        </div>
         
-        <p>전문 분야:</p>
-        <div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div id="search-bar">
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input id="search" type="text" placeholder="Search..." />
-        <div id="search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
+        <p>Welcome! I'm an expert at the forefront of <span class="highlight">VLSI (Very Large Scale Integration)</span>. Join me on an extraordinary journey where the mysteries of the universe meet the precision of nano technology.</p>
         
+        <p>Areas of Expertise:</p>
         <ul>
-            <li>우주 탐사용 초고집적 반도체 설계</li>
-            <li>양자 효과를 활용한 차세대 컴퓨팅 아키텍처</li>
-            <li>우주 방사선 내성 트랜지스터 기술</li>
-            <li>초저전력 인공위성용 집적회로 개발</li>
-            <li>행성 탐사 로봇을 위한 AI 반도체 솔루션</li>
+            <li>Ultra-high-density semiconductor design for space exploration</li>
+            <li>Next-generation computing architectures leveraging quantum effects</li>
+            <li>Radiation-hardened transistor technology for space applications</li>
+            <li>Ultra-low-power integrated circuit development for satellites</li>
+            <li>AI semiconductor solutions for planetary exploration robots</li>
         </ul>
         
         <div class="contact-info">
-            <p>우주와 나노 기술의 융합에 대한 아이디어를 나누고 싶으신가요? 연락주세요:</p>
+            <p>Want to share ideas about the fusion of space and nano technology? Contact me:</p>
             <p>Email: <a href="mailto:gc@vlsi.kr">gc@vlsi.kr</a></p>
-            <p>더 깊이 있는 기술 토론을 원하신다면:</p>
-            <ul>
-                <li><a href="https://blog.naver.com/gc_na" target="_blank">NAVER Blog - 우주 반도체 기술 분석</a></li>
-                <li><a href="https://cafe.naver.com/damnang2" target="_blank">NAVER Cafe - 혁신적 우주 반도체 전문가 네트워크</a></li>
-            </ul>
         </div>
-        
-        <a href="https://vlsi.kr/aboutme/" class="about-me-link">내 소개 페이지 보기</a>
     </div>
     
     <script>
@@ -194,33 +180,6 @@
         }
 
         createStars();
-
-        document.addEventListener('click', createShootingStar);
-
-        function createShootingStar(e) {
-            const star = document.createElement('div');
-            star.className = 'shooting-star';
-            star.style.left = `${e.clientX}px`;
-            star.style.top = `${e.clientY}px`;
-
-            const angle = Math.random() * Math.PI * 2;
-            const speed = 10 + Math.random() * 10;
-            const distance = 100 + Math.random() * 200;
-
-            star.animate([
-                { transform: `rotate(${angle}rad) translate(0, 0) scale(1)`, opacity: 1 },
-                { transform: `rotate(${angle}rad) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) scale(0.1)`, opacity: 0 }
-            ], {
-                duration: distance / speed * 100,
-                easing: 'ease-out'
-            });
-
-            document.body.appendChild(star);
-
-            setTimeout(() => {
-                document.body.removeChild(star);
-            }, distance / speed * 100);
-        }
     </script>
 </body>
 </html>
