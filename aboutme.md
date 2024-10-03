@@ -79,7 +79,8 @@
             <div class="beliefs">
                 <h4>I believe</h4>
                 <ul>
-                    <li>Moore's Law is over, and all companies need their own "bespoke silicon".</li>
+                    <li>Moore's Law is over, and scaling is not cheap.</li>
+                    <li>All companies need their own "bespoke silicon".</li>
                     <li>Custom silicon should be made accessible to everyone in the most efficient way.</li>
                 </ul>
             </div>
