@@ -1,3 +1,207 @@
----
-layout: home
----
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { Code2, Cpu, Globe2, Layers } from 'lucide-react';
+
+const ModernPortfolio = () => {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [scrolled, setScrolled] = useState(0);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      });
+    };
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const calculateParallax = (factor = 1) => ({
+    transform: `translate(${(mousePosition.x - window.innerWidth / 2) * 0.02 * factor}px, 
+                         ${(mousePosition.y - window.innerHeight / 2) * 0.02 * factor}px)`
+  });
+
+  const blogs = [
+    { name: 'VLSI Korea', platform: 'Naver', color: 'from-emerald-500 to-green-600' },
+    { name: 'VLSI America', platform: 'Google', color: 'from-blue-500 to-indigo-600' },
+    { name: 'VLSI Vietnam', platform: 'Google', color: 'from-violet-500 to-purple-600' },
+    { name: 'VLSI Japan', platform: 'Google', color: 'from-red-500 to-rose-600' }
+  ];
+
+  const skills = [
+    { icon: Cpu, title: 'Semiconductor', desc: 'Expert in VLSI Design & Architecture' },
+    { icon: Code2, title: 'Technical', desc: 'Advanced Circuit Design Skills' },
+    { icon: Globe2, title: 'Global', desc: 'International Industry Experience' },
+    { icon: Layers, title: 'Research', desc: 'Published Technical Papers' }
+  ];
+
+  return (
+    <div className="min-h-[300vh] bg-black text-white overflow-hidden">
+      {/* Background Effects */}
+      <div className="fixed inset-0 opacity-30">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(76,29,149,0.3),rgba(0,0,0,0))]" 
+             style={calculateParallax(0.5)} />
+      </div>
+
+      {/* Hero Section */}
+      <div className="h-screen flex items-center relative">
+        <div className="container mx-auto px-6 relative z-20">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="max-w-2xl relative"
+            style={calculateParallax(0.2)}
+          >
+            <div className="absolute -top-20 -left-20 w-40 h-40 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-full blur-3xl" />
+            <div className="absolute top-20 -right-20 w-40 h-40 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-full blur-3xl" />
+            
+            <h1 className="text-7xl font-light mb-8 tracking-tight leading-none">
+              <motion.span
+                className="block"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                Welcome to
+              </motion.span>
+              <motion.span
+                className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                My VLSI
+              </motion.span>
+              <motion.span
+                className="block"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.6 }}
+              >
+                Network
+              </motion.span>
+            </h1>
+
+            <motion.div
+              className="flex flex-wrap gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+            >
+              <span className="px-6 py-3 border border-purple-500/30 rounded-full bg-purple-500/10 backdrop-blur-sm">
+                Semiconductor Expert
+              </span>
+              <span className="px-6 py-3 border border-blue-500/30 rounded-full bg-blue-500/10 backdrop-blur-sm">
+                Global VLSI Network
+              </span>
+            </motion.div>
+          </motion.div>
+        </div>
+
+        <motion.div
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2 }}
+        >
+          <p className="text-sm mb-2 text-center">Scroll to Explore</p>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="w-6 h-6 mx-auto"
+          >
+            ↓
+          </motion.div>
+        </motion.div>
+      </div>
+
+      {/* About Me Section */}
+      <div className={`min-h-screen relative z-10 flex items-center transition-all duration-1000 ${
+        scrolled > 300 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}>
+        <div className="container mx-auto px-6">
+          <motion.div className="relative">
+            {/* Decorative Elements */}
+            <div className="absolute -top-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
+
+            <div className="text-center mb-16">
+              <h2 className="text-5xl font-light mb-6">About Me</h2>
+              <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+                Passionate VLSI expert with a global perspective on semiconductor technology.
+                Connecting and sharing knowledge across continents through dedicated platforms.
+              </p>
+            </div>
+
+            {/* Skills Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={skill.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={scrolled > 400 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -5 }}
+                  className="relative group"
+                >
+                  <div className="p-8 rounded-xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all">
+                    <skill.icon className="w-10 h-10 mb-4 text-purple-400 group-hover:text-purple-300 transition-colors" />
+                    <h3 className="text-xl font-light mb-2">{skill.title}</h3>
+                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{skill.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Blogs Section */}
+      <div className={`min-h-screen relative z-10 transition-all duration-1000 ${
+        scrolled > 800 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}>
+        <div className="container mx-auto px-6 py-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {blogs.map((blog, index) => (
+              <motion.div
+                key={blog.name}
+                initial={{ opacity: 0, y: 50 }}
+                animate={scrolled > 800 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                whileHover={{ scale: 1.02 }}
+                className="group"
+              >
+                <div className={`rounded-xl bg-gradient-to-r ${blog.color} p-[2px]`}>
+                  <div className="h-full rounded-xl bg-black/95 backdrop-blur-xl p-8 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                    
+                    <div className="relative">
+                      <h3 className="text-3xl font-light mb-4">{blog.name}</h3>
+                      <p className="text-gray-400 mb-6">on {blog.platform}</p>
+                      <button className="px-8 py-3 rounded-lg bg-white/10 hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-sm">
+                        Visit Blog →
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ModernPortfolio;
