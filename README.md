@@ -1,5 +1,4 @@
 <!-- Header -->
-# VLSI Wiki  
 *죽을때까지 반도체를 연구합니다. 그리고 배운 지식을 공유합니다. - [Chase Na | 나경채]*
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/vlsikr/) • [YouTube](https://www.youtube.com/@vlsikr) • [Instagram](https://www.instagram.com/vlsiwiki) • [STEM Community](https://cafe.naver.com/damnang2)
@@ -8,8 +7,8 @@
 
 # Abstract
 
-**VLSI Wiki** is an open community that encompasses all knowledge related to semiconductors and VLSI—from fundamental theories to the latest technology trends.  
-To bring future technologies such as **AI, autonomous driving, Mars exploration, and the Metaverse** to life, **semiconductors** are the essential hardware.
+This is an open community that encompasses all knowledge related to IT—from fundamental theories to the latest technology trends.  
+To bring future technologies such as **AI, autonomous driving, Mars exploration, and the Metaverse** to life, **IT** is the essential technology.
 
 I've always had many questions:
 > “What does this term mean?”  
@@ -26,7 +25,7 @@ My ultimate goal is to serve as a beacon of progress for the global semiconducto
 Hi again, this is **Chase**.  
 
 MBTI: ESTJ, Nationality: South Korea. And I like movies and traveling.  
-Do you have any more questions? If not, I'll go back to **VLSI Wiki** story.
+Do you have any more questions?
 
 To be honest, every time I sit down to write, a wave of apprehension hits me:
 > “What if my writing isn’t good enough?”  
@@ -45,22 +44,6 @@ I share this valuable knowledge at no cost, but I hope that the benefits you rec
 
 ---
 
-## What Chase will cover:
-
-- **Semiconductor Fundamentals:**  
-  Dive into the principles and processes that power chip design and fabrication.
-- **EDA & Innovation:**  
-  Explore the latest tools, techniques, and breakthroughs in electronic design automation.
-- **Tech Trends & Policy:**  
-  Get informed on AI, autonomous systems, semiconductor markets, and science & tech policy.
-- **VLSI Engineer Life:**  
-  Experience a behind-the-scenes look at the dynamic world of Korean VLSI engineering.
-- **STEM Careers:**  
-  Find guidance, inspiration, and real-world insights for your journey in science, technology, engineering, and mathematics.
-- **Korean Lifestyle**
-
----
-
 ## Books
 
 - **[Chase TCL](https://vlsi-korea.gitbook.io/chase-tcl)**  
@@ -76,5 +59,3 @@ Got ideas, questions, Coffee chat, or collaboration opportunities?
 Drop me a line at: [gc@vlsi.kr](mailto:gc@vlsi.kr)
 
 ---
-
-© 2025 VLSI Wiki – Empowering innovation and shaping the future of semiconductors.
