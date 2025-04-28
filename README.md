@@ -1,80 +1,102 @@
-<!-- Header -->
-# VLSI Wiki  
-*죽을때까지 반도체를 연구합니다. 그리고 배운 지식을 공유합니다. - [Chase Na | 나경채]*
+# Chase Na
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/vlsikr/) • [YouTube](https://www.youtube.com/@vlsikr) • [Instagram](https://www.instagram.com/vlsiwiki) • [STEM Community](https://cafe.naver.com/damnang2)
-
----
-
-# Abstract
-
-**VLSI Wiki** is an open community that encompasses all knowledge related to semiconductors and VLSI—from fundamental theories to the latest technology trends.  
-To bring future technologies such as **AI, autonomous driving, Mars exploration, and the Metaverse** to life, **semiconductors** are the essential hardware.
-
-I've always had many questions:
-> “What does this term mean?”  
-> “How should I choose my career path?”  
-> “What if I make a mistake?”  
-> “Who can I ask when I don’t understand something?”  
-> “And what about investing, debugging, or research papers...?”
-
-With a variety of concerns on my mind, I decided to create this website to share my journey and address your questions—ultimately contributing to the semiconductor industry.  
-My ultimate goal is to serve as a beacon of progress for the global semiconductor industry, sparking positive change for both my company and society at large.
-
-# Author
-
-Hi again, this is **Chase**.  
-
-MBTI: ESTJ, Nationality: South Korea. And I like movies and traveling.  
-Do you have any more questions? If not, I'll go back to **VLSI Wiki** story.
-
-To be honest, every time I sit down to write, a wave of apprehension hits me:
-> “What if my writing isn’t good enough?”  
-> “Is it really okay for me to share these thoughts?”
-
-But no one starts off perfect, and once something is finished, it can help others—that in itself is a success.
-
-I am constantly learning and striving for continuous improvement.  
-If you notice any shortcomings or areas for enhancement, please feel free to guide me with your warm feedback. 🙏
-
-# Conclusion
-
-This blog is just a side project; my primary focus is on advancing the best interests of the company I work for.  
-I share this valuable knowledge at no cost, but I hope that the benefits you receive from it are infinitely more valuable.
-
+<div style="text-align:center">
+  <h2>Semiconductor Engineer & Tech Expert</h2>
+  <p><em>"Researching semiconductors until my last breath. Sharing knowledge with the world."</em></p>
+</div>
 
 ---
 
-## What Chase will cover:
+<section class="profile-section" data-aos="fade-up">
+  <h2>About Me</h2>
 
-- **Semiconductor Fundamentals:**  
-  Dive into the principles and processes that power chip design and fabrication.
-- **EDA & Innovation:**  
-  Explore the latest tools, techniques, and breakthroughs in electronic design automation.
-- **Tech Trends & Policy:**  
-  Get informed on AI, autonomous systems, semiconductor markets, and science & tech policy.
-- **VLSI Engineer Life:**  
-  Experience a behind-the-scenes look at the dynamic world of Korean VLSI engineering.
-- **STEM Careers:**  
-  Find guidance, inspiration, and real-world insights for your journey in science, technology, engineering, and mathematics.
-- **Korean Lifestyle**
+  <p>I'm a semiconductor design engineer with expertise in VLSI and advanced technology trends.</p>
+
+  <p>My core expertise includes:</p>
+  <ul>
+    <li>VLSI Design & Verification</li>
+    <li>EDA Tool Optimization</li>
+    <li>Advanced Technology Analysis</li>
+    <li>Semiconductor Strategy</li>
+  </ul>
+</section>
 
 ---
 
-## Books
+<h2>Expertise</h2>
 
-- **[Chase TCL](https://vlsi-korea.gitbook.io/chase-tcl)**  
-  Your hands-on guide to mastering TCL in semiconductor design.
-- **Coming Soon in 2025: [?]**  
+<div class="expertise-grid">
+  <div class="expertise-card" data-aos="flip-left" data-aos-delay="100">
+    <h3>🔹 Semiconductor Technology</h3>
+    <ul>
+      <li>VLSI Architecture</li>
+      <li>SoC Solutions</li>
+      <li>Advanced Node Process</li>
+      <li>Low-Power Optimization</li>
+    </ul>
+  </div>
   
+  <div class="expertise-card" data-aos="flip-left" data-aos-delay="200">
+    <h3>🔹 Industry Insights</h3>
+    <ul>
+      <li>Global Market Analysis</li>
+      <li>Technology Forecasting</li>
+      <li>Industry Strategy</li>
+      <li>R&D Investment</li>
+    </ul>
+  </div>
+</div>
+
+<div class="expertise-grid">
+  <div class="expertise-card" data-aos="flip-left" data-aos-delay="300">
+    <h3>🔹 Innovation & Research</h3>
+    <ul>
+      <li>AI Accelerator Architecture</li>
+      <li>Next-Gen Memory Solutions</li>
+      <li>Advanced Computing Systems</li>
+      <li>Sustainable Chip Design</li>
+    </ul>
+  </div>
+  
+  <div class="expertise-card" data-aos="flip-left" data-aos-delay="400">
+    <h3>🔹 Knowledge Sharing</h3>
+    <ul>
+      <li>Technical Publications</li>
+      <li>Industry Conferences</li>
+      <li>Engineer Mentoring</li>
+      <li>Open Source Contributions</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
-## Let’s Connect
+<section class="vision-section" data-aos="zoom-in">
+  <h2>My Vision</h2>
 
-Got ideas, questions, Coffee chat, or collaboration opportunities?  
-Drop me a line at: [gc@vlsi.kr](mailto:gc@vlsi.kr)
+  <blockquote>
+    <p>"Advancing semiconductor technology to enable the future of AI, autonomous driving, space exploration, and metaverse - driving positive changes for both my company and society."</p>
+  </blockquote>
+</section>
 
 ---
 
-© 2025 VLSI Wiki – Empowering innovation and shaping the future of semiconductors.
+<h2>Let's Connect</h2>
+
+<div class="social-links" data-aos="fade-up">
+  <a href="https://www.linkedin.com/in/vlsikr/">LinkedIn</a>
+  <a href="https://www.youtube.com/@vlsikr">YouTube</a>
+  <a href="https://www.instagram.com/vlsiwiki">Instagram</a>
+  <a href="https://cafe.naver.com/damnang2">STEM Community</a>
+</div>
+
+<div style="text-align:center; margin: 30px 0;" data-aos="fade-up" data-aos-delay="200">
+  <p>Want to collaborate or exchange insights? Contact me at:</p>
+  <a href="mailto:gc@vlsi.kr" class="email-link">gc@vlsi.kr</a>
+</div>
+
+---
+
+<div style="text-align:center; margin-top:40px; font-style:italic;" class="footer-section">
+  © 2025 Chase Na – Designing the future through semiconductor innovation.
+</div>
