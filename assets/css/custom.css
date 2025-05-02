@@ -2,10 +2,17 @@
 
 :root {
   --primary-color: #0e76a8; /* LinkedIn Blue */
+<<<<<<< HEAD
   --secondary-color: #222222;
   --accent-color: #5cb85c;
   --text-color: #000000; /* 검정색으로 변경 */
   --light-text: #222222; /* 더 진한 색상으로 변경 */
+=======
+  --secondary-color: #333333;
+  --accent-color: #5cb85c;
+  --text-color: #222222; /* 더 진한 색상으로 변경 (회색 → 검정에 가까운 색) */
+  --light-text: #333333; /* 밝은 텍스트도 더 진한 색상으로 변경 */
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   --background-color: #fafafa;
   --card-bg: #ffffff;
   --border-color: #e5e5e5;
@@ -18,12 +25,17 @@
 body {
   font-family: 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.7;
+<<<<<<< HEAD
   color: #000000 !important; /* 강제로 검정색 적용 */
+=======
+  color: var(--text-color);
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   background-color: var(--background-color);
   transition: all 0.3s ease;
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 /* 본문 모든 텍스트에 검정색 적용 */
 p, li, a, span, div {
   color: #000000;
@@ -39,6 +51,8 @@ p, li, a, span, div {
   color: #000000 !important;
 }
 
+=======
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 /* Header Styles */
 h1, h2, h3, h4, h5, h6 {
   color: var(--secondary-color);
@@ -113,7 +127,11 @@ blockquote::before {
 blockquote p {
   margin-bottom: 0;
   font-size: 1.2em;
+<<<<<<< HEAD
   color: #000000 !important; /* 인용구 텍스트도 검정색으로 */
+=======
+  color: var(--secondary-color);
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   line-height: 1.6;
   position: relative;
   z-index: 1;
@@ -128,7 +146,10 @@ ul li {
   margin-bottom: 10px;
   position: relative;
   transition: transform 0.3s ease;
+<<<<<<< HEAD
   color: #000000;
+=======
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 }
 
 ul li:hover {
@@ -157,10 +178,13 @@ hr {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .profile-section p, .profile-section li {
   color: #000000 !important; /* 프로필 섹션 내 텍스트도 검정색 */
 }
 
+=======
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 .profile-section:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -185,7 +209,11 @@ hr {
   padding: 12px 25px;
   border-radius: 50px;
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+<<<<<<< HEAD
   color: white !important; /* 소셜 링크 버튼 텍스트는 흰색 유지 */
+=======
+  color: white;
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -271,10 +299,13 @@ hr {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .expertise-card p, .expertise-card li {
   color: #000000 !important; /* 전문 분야 카드 내 텍스트도 검정색 */
 }
 
+=======
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 .expertise-card:hover {
   transform: translateY(-10px) rotateY(5deg);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -310,7 +341,11 @@ hr {
   padding: 30px 0;
   border-top: 1px solid var(--border-color);
   font-size: 0.9em;
+<<<<<<< HEAD
   color: #000000 !important; /* 푸터 텍스트 색상 변경 */
+=======
+  color: var(--text-color); /* 푸터 텍스트 색상 변경 */
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 }
 
 /* Sidebar Enhancements */
@@ -321,13 +356,18 @@ hr {
 }
 
 #git-wiki-sidebar a {
+<<<<<<< HEAD
   color: #000000 !important; /* 사이드바 링크 색상 변경 */
+=======
+  color: var(--text-color); /* 사이드바 링크 색상 변경 */
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 }
 
 #git-wiki-sidebar h3 {
   color: var(--primary-color); /* 사이드바 헤더 색상 유지 */
 }
 
+<<<<<<< HEAD
 /* 모바일 헤더 색상 수정 */
 #git-wiki-mobile-header span {
   color: #000000 !important; 
@@ -338,6 +378,8 @@ hr {
   color: #000000 !important;
 }
 
+=======
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
 /* Content Area Enhancements */
 .git-wiki-page {
   position: relative;
@@ -391,8 +433,13 @@ hr {
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   :root {
+<<<<<<< HEAD
     --text-color: #ffffff; /* 다크 모드에서는 흰색 텍스트 */
     --light-text: #ffffff;
+=======
+    --text-color: #e0e0e0;
+    --light-text: #cccccc; /* 다크 모드에서도 글자색을 더 밝게 조정 */
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
     --background-color: #121212;
     --card-bg: #1e1e1e;
     --border-color: #333333;
@@ -402,6 +449,7 @@ hr {
   
   body {
     background-color: var(--background-color);
+<<<<<<< HEAD
     color: #ffffff !important; /* 다크 모드에서는 흰색 텍스트 */
   }
   
@@ -412,6 +460,9 @@ hr {
   /* 소셜 링크 버튼은 흰색 유지 */
   .social-links a {
     color: white !important;
+=======
+    color: var(--text-color);
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   }
   
   h1, h2 {
@@ -422,10 +473,13 @@ hr {
     background: linear-gradient(135deg, rgba(14, 118, 168, 0.1) 0%, rgba(14, 118, 168, 0.05) 100%);
   }
   
+<<<<<<< HEAD
   blockquote p {
     color: #ffffff !important;
   }
   
+=======
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   .expertise-card, .profile-section {
     background-color: var(--card-bg);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -436,6 +490,10 @@ hr {
   }
   
   #git-wiki-sidebar a {
+<<<<<<< HEAD
     color: #ffffff !important;
+=======
+    color: var(--light-text);
+>>>>>>> c251f7a604e6c02b5f50cf9ee0070dae4b91e0ce
   }
 }
