@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 배경 원 -->
+  <circle cx="16" cy="16" r="15" fill="#0e76a8" />
+  <circle cx="16" cy="16" r="13" fill="#ffffff" />
+  
+  <!-- 가운데 반도체 칩 아이콘 -->
+  <rect x="8" y="8" width="16" height="16" rx="1" fill="#0e76a8" />
+  
+  <!-- 칩의 선들 -->
+  <line x1="8" y1="10" x2="6" y2="10" stroke="#0e76a8" stroke-width="1" />
+  <line x1="8" y1="13" x2="6" y2="13" stroke="#0e76a8" stroke-width="1" />
+  <line x1="8" y1="16" x2="6" y2="16" stroke="#0e76a8" stroke-width="1" />
+  <line x1="8" y1="19" x2="6" y2="19" stroke="#0e76a8" stroke-width="1" />
+  
+  <line x1="24" y1="10" x2="26" y2="10" stroke="#0e76a8" stroke-width="1" />
+  <line x1="24" y1="13" x2="26" y2="13" stroke="#0e76a8" stroke-width="1" />
+  <line x1="24" y1="16" x2="26" y2="16" stroke="#0e76a8" stroke-width="1" />
+  <line x1="24" y1="19" x2="26" y2="19" stroke="#0e76a8" stroke-width="1" />
+  
+  <line x1="10" y1="8" x2="10" y2="6" stroke="#0e76a8" stroke-width="1" />
+  <line x1="13" y1="8" x2="13" y2="6" stroke="#0e76a8" stroke-width="1" />
+  <line x1="16" y1="8" x2="16" y2="6" stroke="#0e76a8" stroke-width="1" />
+  <line x1="19" y1="8" x2="19" y2="6" stroke="#0e76a8" stroke-width="1" />
+  <line x1="22" y1="8" x2="22" y2="6" stroke="#0e76a8" stroke-width="1" />
+  
+  <line x1="10" y1="24" x2="10" y2="26" stroke="#0e76a8" stroke-width="1" />
+  <line x1="13" y1="24" x2="13" y2="26" stroke="#0e76a8" stroke-width="1" />
+  <line x1="16" y1="24" x2="16" y2="26" stroke="#0e76a8" stroke-width="1" />
+  <line x1="19" y1="24" x2="19" y2="26" stroke="#0e76a8" stroke-width="1" />
+  <line x1="22" y1="24" x2="22" y2="26" stroke="#0e76a8" stroke-width="1" />
+  
+  <!-- 내부 패턴 -->
+  <rect x="10" y="10" width="4" height="4" fill="#ffffff" />
+  <rect x="18" y="10" width="4" height="4" fill="#ffffff" />
+  <rect x="10" y="18" width="4" height="4" fill="#ffffff" />
+  <rect x="18" y="18" width="4" height="4" fill="#ffffff" />
+</svg>

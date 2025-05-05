@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.vlsi.kr/sql/</loc>
+<<<<<<< HEAD
     <lastmod>2025-05-05T07:08:52+00:00</lastmod>
+=======
+    <lastmod>2025-04-29T14:57:38+00:00</lastmod>
+>>>>>>> 62e45728ed4894b5b7f182521be1305f09749010
     <priority>0.80</priority>
   </url>
   <url>
