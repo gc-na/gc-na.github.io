@@ -7,15 +7,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
-<!-- jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
 <script src="{{ '/assets/js/checkLinks.js' | relative_url }}"></script>
-
-<!-- AOS (Animate On Scroll) Library -->
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -46,6 +41,7 @@
   }
 
   function addDarkmodeWidget() {
+
     const options = {
         label: '🌓', // default: ''
         time: '0s'
@@ -57,26 +53,7 @@
     document.body.style.opacity = 1;
   }
 
-  // Initialize AOS animation library
-  function initAOS() {
-    AOS.init({
-      duration: 800,
-      easing: 'ease-out-cubic',
-      once: false,
-      mirror: true
-    });
-  }
-
-  // Document ready function
-  $(document).ready(function() {
-    addDarkmodeWidget();
-    initAOS();
-    
-    // Re-trigger AOS on scroll for more dynamic feeling
-    $(window).scroll(function() {
-      AOS.refresh();
-    });
-  });
+  $(document).ready(addDarkmodeWidget);
 </script>
 
 {% if site.inc_after_scripts %}
