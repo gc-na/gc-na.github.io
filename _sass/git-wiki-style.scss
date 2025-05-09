@@ -6,8 +6,8 @@ body {
   /* background-color: #fff; */
   padding: 50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333333;
-  font-weight: 500;
+  color: #727272;
+  font-weight: 400;
 }
 
 h1,
@@ -16,9 +16,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000000;
+  color: #222;
   margin: 0 0 20px;
-  font-weight: 700;
 }
 
 p,
@@ -41,20 +40,19 @@ h1 {
 }
 
 h2 {
-  color: #151515;
+  color: #393939;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  color: #202020;
+  color: #494949;
 }
 
 a {
-  color: #0066cc;
+  color: #39c;
   text-decoration: none;
-  font-weight: 500;
 }
 
 a:hover {
@@ -63,7 +61,7 @@ a:hover {
 
 a small {
   font-size: 11px;
-  color: #444;
+  color: #777;
   margin-top: -0.3em;
   display: block;
 }
@@ -214,7 +212,7 @@ screen and (max-width: 992px) {
 }
 
 strong {
-  color: #000;
+  color: #222;
   font-weight: 700;
 }
 
@@ -377,19 +375,6 @@ screen and (max-width: 480px) {
 
 #results-container li {
   list-style-type: none;
-}
-
-.post-list-item a {
-  font-weight: 600;
-  color: #000000;
-  font-size: 14px;
-  line-height: 1.8;
-}
-
-.post-list-title {
-  font-weight: 700;
-  color: #000000;
-  font-size: 16px;
 }
 
 .external-link {
