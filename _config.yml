@@ -1,7 +1,7 @@
 # (string) Title of your wiki
 title: "VLSI Wiki"
 # (string) Description of your wiki
-description: 
+description: "VLSI Wiki is an open community that encompasses all knowledge related to semiconductors and VLSI—from fundamental theories to the latest technology trends." 
 # (boolean) disable edit functionalities (edit/delete/add pages)
 disable_edit: false
 # (boolean) Enable/disable wiki page list in sidebar
@@ -11,7 +11,7 @@ show_wiki_pages_limit: 10
 # (boolean) Enable/disable blog feature
 blog_feature: true
 # (boolean) Enable/disable wiki posts list in sidebar (needs blog_feature enabled)
-show_wiki_posts: true
+show_wiki_posts: false
 # (integer) Maximum number of wiki posts to shown in sidebar
 show_wiki_posts_limit: 10
 # from jekyll (read jekyll doc)
@@ -25,7 +25,21 @@ git_branch: "master"
 # (string) Url of logo image, it can be full, absolute or relative.
 logo_url: /assets/logo.png
 # (string) The UA-XXXXX-Y code from google analytic to enable GA on your wiki
-google_analytics: 
+google_analytics:
+
+# SEO settings
+seo:
+  name: "VLSI Wiki"
+  description: "VLSI Wiki is an open community that encompasses all knowledge related to semiconductors and VLSI—from fundamental theories to the latest technology trends."
+  author: "Chase Na"
+  keywords: "VLSI, semiconductor, electronics, chip design, EDA, ASIC, FPGA"
+
+# Social media links
+author:
+  name: "Chase Na"
+  linkedin: "https://www.linkedin.com/in/vlsikr/"
+  youtube: "https://www.youtube.com/@vlsikr"
+  instagram: "https://www.instagram.com/vlsiwiki" 
 # (string) folder where wiki pages are stored, it's needed for tool buttons
 wiki_folder: "wiki"
 # (boolean) if you're using github wiki as submodule then this config
