@@ -1,3 +1,11 @@
+---
+title: "VLSI Wiki"
+description: "VLSI Wiki is an open community that encompasses all knowledge related to semiconductors and VLSI—from fundamental theories to the latest technology trends."
+author: "Chase Na"
+keywords: "VLSI, semiconductor, electronics, chip design, EDA, ASIC, FPGA"
+image: "/assets/logo.png"
+---
+
 <!-- Header -->
 # VLSI Wiki  
 *죽을때까지 반도체를 연구합니다. 그리고 배운 지식을 공유합니다. - [Chase Na | 나경채]*
@@ -12,11 +20,11 @@
 To bring future technologies such as **AI, autonomous driving, Mars exploration, and the Metaverse** to life, **semiconductors** are the essential hardware.
 
 I've always had many questions:
-> “What does this term mean?”  
-> “How should I choose my career path?”  
-> “What if I make a mistake?”  
-> “Who can I ask when I don’t understand something?”  
-> “And what about investing, debugging, or research papers...?”
+> "What does this term mean?"  
+> "How should I choose my career path?"  
+> "What if I make a mistake?"  
+> "Who can I ask when I don't understand something?"  
+> "And what about investing, debugging, or research papers...?"
 
 With a variety of concerns on my mind, I decided to create this website to share my journey and address your questions—ultimately contributing to the semiconductor industry.  
 My ultimate goal is to serve as a beacon of progress for the global semiconductor industry, sparking positive change for both my company and society at large.
@@ -29,8 +37,8 @@ MBTI: ESTJ, Nationality: South Korea. And I like movies and traveling.
 Do you have any more questions? If not, I'll go back to **VLSI Wiki** story.
 
 To be honest, every time I sit down to write, a wave of apprehension hits me:
-> “What if my writing isn’t good enough?”  
-> “Is it really okay for me to share these thoughts?”
+> "What if my writing isn't good enough?"  
+> "Is it really okay for me to share these thoughts?"
 
 But no one starts off perfect, and once something is finished, it can help others—that in itself is a success.
 
@@ -70,7 +78,7 @@ I share this valuable knowledge at no cost, but I hope that the benefits you rec
 
 ---
 
-## Let’s Connect
+## Let's Connect
 
 Got ideas, questions, Coffee chat, or collaboration opportunities?  
 Drop me a line at: [gc@vlsi.kr](mailto:gc@vlsi.kr)
