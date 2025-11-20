@@ -4,20 +4,13 @@
   <meta charset="UTF-8" />
   <title>CHASE NA — Selected Works</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Optional: Inter font (you can remove this if you want only system fonts) -->
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  />
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
     rel="stylesheet"
   />
+
   <style>
     :root {
       --bg: #faf9f7;
@@ -26,13 +19,9 @@
       --border-soft: #e3e1dd;
       --accent: #1f3fff;
     }
+    * { box-sizing: border-box; }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
+    html, body {
       height: 100%;
       margin: 0;
       padding: 0;
@@ -59,9 +48,7 @@
       min-height: 100vh;
     }
 
-    header {
-      margin-bottom: 40px;
-    }
+    header { margin-bottom: 40px; }
 
     h1 {
       font-size: clamp(2.8rem, 5vw, 3.8rem);
@@ -95,11 +82,7 @@
       margin-bottom: 32px;
     }
 
-    .link-item {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+    .link-item { list-style: none; padding: 0; margin: 0; }
 
     .link-item + .link-item {
       border-top: 1px solid var(--border-soft);
@@ -117,15 +100,11 @@
       transition: color 0.2s ease-out, transform 0.2s ease-out;
     }
 
-    .link-item a .label {
-      letter-spacing: 0.02em;
-    }
+    .link-item a .label { letter-spacing: 0.02em; }
 
     .link-item a .arrow {
       margin-left: 1.5rem;
-      font-size: 1rem;
       opacity: 0.6;
-      transform: translateX(0);
       transition: transform 0.2s ease-out, opacity 0.2s ease-out;
     }
 
@@ -144,9 +123,9 @@
       color: var(--text-sub);
       margin-top: 12px;
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap: 8px;
-      justify-content: space-between;
     }
 
     footer a {
@@ -162,16 +141,12 @@
     }
 
     @media (max-width: 600px) {
-      main {
-        padding: 32px 20px;
-      }
-
-      h1 {
-        font-size: 2.3rem;
-      }
+      main { padding: 32px 20px; }
+      h1 { font-size: 2.3rem; }
     }
   </style>
 </head>
+
 <body>
   <main>
     <header>
@@ -185,32 +160,29 @@
       <div class="links">
         <ul>
           <li class="link-item">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/vlsikr" target="_blank" rel="noopener noreferrer">
               <span class="label">LinkedIn</span>
               <span class="arrow">&rarr;</span>
             </a>
           </li>
+
           <li class="link-item">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.vlsi.kr" target="_blank" rel="noopener noreferrer">
               <span class="label">VLSI Korea: Newsletter</span>
               <span class="arrow">&rarr;</span>
             </a>
           </li>
+
           <li class="link-item">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://blog.naver.com/gc_na" target="_blank" rel="noopener noreferrer">
               <span class="label">VLSI Korea: Blog</span>
               <span class="arrow">&rarr;</span>
             </a>
           </li>
+
           <li class="link-item">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://cafe.naver.com/damnang2" target="_blank" rel="noopener noreferrer">
               <span class="label">Career Community</span>
-              <span class="arrow">&rarr;</span>
-            </a>
-          </li>
-          <li class="link-item">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <span class="label">YouTube</span>
               <span class="arrow">&rarr;</span>
             </a>
           </li>
@@ -220,17 +192,12 @@
 
     <footer>
       <span>&copy; <span id="year">2025</span> Chase Na.</span>
-      <span>
-        <a href="mailto:gc@vlsi.kr">gc@vlsi.kr</a>
-      </span>
+      <span><a href="mailto:gc@vlsi.kr">gc@vlsi.kr</a></span>
     </footer>
   </main>
 
   <script>
-    // Optional: auto-update year
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
